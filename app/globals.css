@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   GCSE2MED design tokens
+   Brief: "Primary – blue. Secondary – red and yellow."
+   - brand (blue)  : identity, primary CTAs, links
+   - accent (yellow): highlights, badges, the "measure it" motif. Never body text
+                      on white — contrast fails. Use as a background or a rule.
+   - flag (red)    : emphasis and the mistake-bank "gap" language only
+   --------------------------------------------------------------------------- */
+@theme {
+  --color-brand-50: #eff5ff;
+  --color-brand-100: #dbe7fe;
+  --color-brand-200: #bfd4fe;
+  --color-brand-300: #93b8fd;
+  --color-brand-400: #6094fa;
+  --color-brand-500: #3b74f6;
+  --color-brand-600: #2456eb;
+  --color-brand-700: #1b43d8;
+  --color-brand-800: #1d39af;
+  --color-brand-900: #1d348a;
+  --color-brand-950: #162254;
+
+  --color-accent-50: #fffbeb;
+  --color-accent-100: #fff3c4;
+  --color-accent-200: #ffe98a;
+  --color-accent-300: #ffd94d;
+  --color-accent-400: #fbc11b;
+  --color-accent-500: #eaa600;
+  --color-accent-600: #c27f03;
+  --color-accent-700: #9a5c08;
+  --color-accent-800: #7e4a0e;
+  --color-accent-900: #6b3d0f;
+
+  --color-flag-50: #fef2f2;
+  --color-flag-100: #fee2e2;
+  --color-flag-200: #fecaca;
+  --color-flag-300: #fca5a5;
+  --color-flag-400: #f87171;
+  --color-flag-500: #ef4444;
+  --color-flag-600: #dc2626;
+  --color-flag-700: #b91c1c;
+  --color-flag-800: #991b1b;
+  --color-flag-900: #7f1d1d;
+
+  --color-ink-50: #f8fafc;
+  --color-ink-100: #f1f5f9;
+  --color-ink-200: #e2e8f0;
+  --color-ink-300: #cbd5e1;
+  --color-ink-400: #94a3b8;
+  --color-ink-500: #64748b;
+  --color-ink-600: #475569;
+  --color-ink-700: #334155;
+  --color-ink-800: #1e293b;
+  --color-ink-900: #0f172a;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1rem;
+
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 8px 24px -12px rgb(15 23 42 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(15 23 42 / 0.05), 0 18px 40px -18px rgb(15 23 42 / 0.22);
+
+  --animate-marquee: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* The site is deliberately light-only. A half-finished dark theme reads worse
+   than a committed light one, so we opt out rather than inherit the OS. */
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Offset for the sticky header when jumping to #anchors */
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink-800);
+    -webkit-font-smoothing: antialiased;
+    text-wrap: pretty;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink-900);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  /* One visible focus treatment everywhere, including inside dark sections. */
+  :focus-visible {
+    outline: 3px solid var(--color-accent-400);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
