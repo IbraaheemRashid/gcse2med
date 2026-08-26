@@ -10,7 +10,7 @@ import { tiers } from "@/content/tiers";
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "Diagnose, Expose, Take Action, Review — the four steps behind every GCSE2MED student's plan, and how small-group lessons of 8, 6 or 4 make them possible.",
+    "Diagnose, Expose, Action, Review — the four steps behind every GCSE2MED student's plan, and how small-group lessons of 8, 6 or 4 make them possible.",
   alternates: { canonical: "/how-it-works" },
 };
 

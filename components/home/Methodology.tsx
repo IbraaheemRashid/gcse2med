@@ -8,7 +8,7 @@ export function Methodology() {
       <Container>
         <SectionHeading
           eyebrow="How we work"
-          title="Diagnose. Expose. Take Action. Review."
+          title="Diagnose. Expose. Action. Review."
           lead="Four steps, in that order, for every student. It is the reason we can tell you what your child needs instead of guessing at it."
         />
 
@@ -25,6 +25,11 @@ export function Methodology() {
               <p className="mt-1.5 text-[15px] leading-relaxed text-ink-600">
                 {step.summary}
               </p>
+              {step.note ? (
+                <p className="mt-3 border-t border-ink-200 pt-3 text-sm leading-relaxed text-ink-500">
+                  {step.note}
+                </p>
+              ) : null}
             </li>
           ))}
         </ol>

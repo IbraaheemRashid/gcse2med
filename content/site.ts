@@ -8,7 +8,7 @@ export const site = {
   /** Used in <title> templates and structured data. */
   legalName: "GCSE2MED",
   tagline: "The Support that understands YOUR child.",
-  strapline: "Small Groups. Personalised GCSE Support. Measurable Progress.",
+  strapline: "Small groups. Expert tutors. Targeted support. Measurable progress.",
   description:
     "Small-group GCSE and A-level tuition in Biology, Chemistry, Physics and Maths. We diagnose what is holding your child back, target it, and measure the progress.",
   // TODO(client): swap for the real domain once registered.

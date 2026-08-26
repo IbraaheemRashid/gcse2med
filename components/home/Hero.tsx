@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Layout";
 import { ButtonLink } from "@/components/ui/Button";
-import { BookButton } from "@/components/site/BookButton";
 import { site } from "@/content/site";
 import { tiers } from "@/content/tiers";
 
@@ -15,9 +14,9 @@ export function Hero() {
         className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-accent-200/40 blur-3xl"
       />
       <Container>
-        {/* The brief is explicit that both CTAs must be reachable without
-            scrolling, so the copy above them is kept deliberately tight and the
-            image sits below the fold on small screens. */}
+        {/* One CTA, above the fold on every breakpoint: the copy above it is
+            kept deliberately tight and the image sits below the fold on small
+            screens. Booking stays reachable from the sticky header. */}
         <div className="relative grid items-center gap-10 py-10 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-24">
           <div>
             <p className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-brand-700 ring-1 ring-inset ring-brand-200">
@@ -42,11 +41,13 @@ export function Hero() {
               {site.strapline}
             </p>
 
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <BookButton source="hero" size="lg" />
-              <ButtonLink href="/assessment" variant="secondary" size="lg">
+            <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5">
+              <ButtonLink href="/assessment" size="lg">
                 Take the free assessment
               </ButtonLink>
+              <p className="text-base font-semibold text-ink-800">
+                Find out where your child stands.
+              </p>
             </div>
 
             <p className="mt-5 text-sm text-ink-600">
@@ -59,8 +60,8 @@ export function Hero() {
           <div className="relative lg:justify-self-end">
             <div className="overflow-hidden rounded-card shadow-lift ring-1 ring-ink-200">
               <Image
-                src="/images/hero-study.jpg"
-                alt="A student working through notes at a laptop"
+                src="/images/hero-graduation.jpg"
+                alt="A graduation cap held up in the air outside a university building"
                 width={1800}
                 height={1200}
                 priority
@@ -73,7 +74,7 @@ export function Hero() {
                 Every student starts here
               </p>
               <p className="mt-0.5 text-sm font-semibold text-ink-900">
-                Diagnose &rarr; Expose &rarr; Take Action &rarr; Review
+                Diagnose &rarr; Expose &rarr; Action &rarr; Review
               </p>
             </div>
           </div>

@@ -22,7 +22,7 @@ configure before going live.
 | Route | Notes |
 | --- | --- |
 | `/` | Hero, methodology, assessment callout, delivery, tiers, mistake bank, reviews |
-| `/how-it-works` | Diagnose → Expose → Take Action → Review, in depth |
+| `/how-it-works` | Diagnose → Expose → Action → Review, in depth |
 | `/subjects-pricing` | Subjects, tiers in full, monthly/annual price explorer, FAQs |
 | `/assessment` | Subject picker |
 | `/assessment/[subject]/[level]` | The quiz itself — one static page per question bank |

@@ -17,9 +17,17 @@ const OUT_DIR = "public/images";
 const MAX_WIDTH = 1800;
 const QUALITY = 78;
 
-/** source file -> [output name, alt text, photographer] */
+/**
+ * source file -> [output name, alt text, photographer, crop?]
+ *
+ * `crop` is an optional {left, top, width, height} in ORIGINAL pixels, applied
+ * before the downscale. Portrait sources need it: the layout slots are
+ * landscape, and letting sharp fit them would either squash the subject or
+ * crop it from the centre, which is rarely where the subject is.
+ */
 const MAP = [
   ["christin-hume-Hcfwew744z4-unsplash.jpg", "hero-study", "A student working through notes at a laptop", "Christin Hume"],
+  ["rut-miit-oTglG1D4hRA-unsplash.jpg", "hero-graduation", "A graduation cap held up in the air outside a university building", "Rut Miit", { left: 0, top: 1150, width: 2496, height: 1664 }],
   ["unseen-studio-s9CC2SKySJM-unsplash.jpg", "writing", "A student writing out an answer by hand", "Unseen Studio"],
   ["jeshoots-com-pUAM5hPaCRI-unsplash.jpg", "resources", "Study notes, a laptop and glasses laid out on a desk", "JESHOOTS.COM"],
   ["patrick-perkins-ETRPjvb0KM0-unsplash.jpg", "mistake-bank", "Sticky notes grouped on a wall", "Patrick Perkins"],
@@ -33,9 +41,11 @@ await mkdir(OUT_DIR, { recursive: true });
 
 const credits = [];
 
-for (const [source, name, alt, photographer] of MAP) {
+for (const [source, name, alt, photographer, crop] of MAP) {
   const out = path.join(OUT_DIR, `${name}.jpg`);
-  const info = await sharp(path.join(SOURCE_DIR, source))
+  const pipeline = sharp(path.join(SOURCE_DIR, source));
+  if (crop) pipeline.extract(crop);
+  const info = await pipeline
     .resize({ width: MAX_WIDTH, withoutEnlargement: true })
     .jpeg({ quality: QUALITY, mozjpeg: true })
     .toFile(out);

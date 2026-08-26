@@ -1,4 +1,4 @@
-/** "How we roll here at GCSE2MED" — Diagnose → Expose → Take Action → Review. */
+/** "How we roll here at GCSE2MED" — Diagnose → Expose → Action → Review. */
 
 export type MethodStep = {
   id: string;
@@ -7,6 +7,8 @@ export type MethodStep = {
   summary: string;
   /** Longer explanation, used on /how-it-works. */
   detail: string;
+  /** Optional extra line, rendered under the summary on the homepage card. */
+  note?: string;
 };
 
 export const methodology: MethodStep[] = [
@@ -21,12 +23,13 @@ export const methodology: MethodStep[] = [
     id: "expose",
     step: "Expose",
     summary: "Find what's holding them back",
+    note: "Identify knowledge gaps, misconceptions and the mistakes costing them marks.",
     detail:
-      "A wrong answer is a symptom. We work out the cause: missing knowledge, weak exam technique, or careless marks thrown away. Three very different problems, three very different fixes.",
+      "We identify knowledge gaps, misconceptions and the mistakes costing them marks. A wrong answer is a symptom, so we work out the cause: missing knowledge, weak exam technique, or careless marks thrown away. Three very different problems, three very different fixes.",
   },
   {
     id: "action",
-    step: "Take Action",
+    step: "Action",
     summary: "Target what they need",
     detail:
       "Lessons, flashcards, homework and past-paper practice are pointed at the specific gaps we found — not at a generic scheme of work that treats every student in the room the same.",

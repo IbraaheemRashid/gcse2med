@@ -11,6 +11,7 @@ that script. Originals live in `_brief/photos/`.
 | File | Photographer | Alt text |
 | --- | --- | --- |
 | `hero-study.jpg` | Christin Hume | A student working through notes at a laptop |
+| `hero-graduation.jpg` | Rut Miit | A graduation cap held up in the air outside a university building |
 | `writing.jpg` | Unseen Studio | A student writing out an answer by hand |
 | `resources.jpg` | JESHOOTS.COM | Study notes, a laptop and glasses laid out on a desk |
 | `mistake-bank.jpg` | Patrick Perkins | Sticky notes grouped on a wall |

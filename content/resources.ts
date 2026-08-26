@@ -20,7 +20,7 @@ export const resourceSamples: ResourceSample[] = [
     id: "slides",
     name: "Annotated lesson slides",
     description:
-      "The slides from the lesson, with the annotations the tutor made live on them. Students who miss a week are not left guessing what the class covered.",
+      "The slides from the lesson, with the annotations the tutor made live on them. Students who miss a week are not left guessing what the cohort covered.",
     includedIn: ["essential", "success", "excellence"],
   },
   {
