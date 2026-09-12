@@ -11,9 +11,8 @@ export const site = {
   strapline: "Small groups. Expert tutors. Targeted support. Measurable progress.",
   description:
     "Small-group GCSE and A-level tuition in Biology, Chemistry, Physics and Maths. We diagnose what is holding your child back, target it, and measure the progress.",
-  // TODO(client): swap for the real domain once registered.
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gcse2med.co.uk",
-  email: "hello@gcse2med.co.uk", // TODO(client): confirm
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gcse2med.com",
+  email: "hello@gcse2med.com", // TODO(client): confirm
   /** Optional — omitted from the UI when blank. */
   phone: "",
   socials: {

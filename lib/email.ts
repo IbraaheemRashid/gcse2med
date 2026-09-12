@@ -21,7 +21,7 @@ function getResend(): Resend | null {
 }
 
 /** Verified sending identity. Must be on a domain verified in Resend. */
-const FROM = process.env.EMAIL_FROM ?? `${site.name} <hello@gcse2med.co.uk>`;
+const FROM = process.env.EMAIL_FROM ?? `${site.name} <hello@gcse2med.com>`;
 /** Where enquiry and lead notifications land. */
 const INTERNAL_TO = process.env.EMAIL_INTERNAL_TO ?? site.email;
 
