@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { Container } from "@/components/ui/Layout";
-import { Button, ButtonLink } from "@/components/ui/Button";
+import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 import { ResultsPanel } from "./ResultsPanel";
 import {
   clearAttempt,
@@ -184,7 +185,7 @@ export function QuizRunner({
                   key={option}
                   className={`flex cursor-pointer items-start gap-3 rounded-xl border p-4 text-[15px] transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent-400 ${
                     checked
-                      ? "border-brand-500 bg-brand-50 ring-1 ring-brand-300"
+                      ? "border-brand-500 bg-brand-50 ring-1 ring-inset ring-brand-500"
                       : "border-ink-200 bg-white hover:border-ink-300 hover:bg-ink-50"
                   }`}
                 >
@@ -248,9 +249,12 @@ export function QuizRunner({
 
         <p className="mt-10 text-center text-sm text-ink-500">
           Changed your mind?{" "}
-          <ButtonLink href="/assessment" variant="ghost" size="sm">
+          <Link
+            href="/assessment"
+            className="font-semibold text-brand-700 underline underline-offset-4"
+          >
             Pick a different subject
-          </ButtonLink>
+          </Link>
         </p>
       </div>
     </Container>

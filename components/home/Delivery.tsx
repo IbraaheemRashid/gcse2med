@@ -23,7 +23,7 @@ export function Delivery() {
               that cap.
             </p>
 
-            <p className="mt-5 border-l-4 border-flag-600 pl-4 text-lg font-bold text-ink-900">
+            <p className="mt-5 border-l-4 border-flag-600 pl-5 text-lg font-bold text-ink-900">
               Once a group is full, enrolment for that group closes.
             </p>
 

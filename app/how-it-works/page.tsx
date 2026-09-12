@@ -38,11 +38,9 @@ export default function HowItWorksPage() {
                 key={step.id}
                 className="grid gap-6 border-b border-ink-200 pb-12 last:border-0 last:pb-0 lg:grid-cols-[auto_1fr] lg:gap-10"
               >
-                <div className="flex items-center gap-4 lg:flex-col lg:items-start">
-                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xl font-extrabold text-white">
-                    {index + 1}
-                  </span>
-                </div>
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xl font-extrabold text-white">
+                  {index + 1}
+                </span>
                 <div>
                   <h2 className="text-2xl font-bold sm:text-3xl">{step.step}</h2>
                   <p className="mt-1 text-lg font-semibold text-brand-700">
@@ -120,7 +118,7 @@ export default function HowItWorksPage() {
             lead="This is the part most tuition skips. Telling a student they got a question wrong is not feedback — telling them why is."
           />
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {gapTypes.map((gap) => (
               <div
                 key={gap.id}

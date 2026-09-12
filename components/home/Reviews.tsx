@@ -22,7 +22,7 @@ export function Reviews() {
         />
 
         {reviews.length === 0 ? (
-          <div className="mx-auto mt-10 max-w-2xl rounded-card border border-dashed border-ink-300 bg-ink-50 p-8 text-center">
+          <div className="mx-auto mt-12 max-w-2xl rounded-card border border-dashed border-ink-300 bg-ink-50 p-8 text-center">
             <p className="text-lg font-semibold text-ink-800">
               We are a new company, and we would rather show you nothing than show
               you reviews we wrote ourselves.

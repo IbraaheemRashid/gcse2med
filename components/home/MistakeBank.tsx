@@ -39,7 +39,7 @@ export function MistakeBank() {
               ))}
             </dl>
 
-            <p className="mt-8 border-l-2 border-accent-400 pl-4 text-lg font-semibold text-white">
+            <p className="mt-8 border-l-4 border-accent-400 pl-5 text-lg font-semibold text-white">
               {mistakeBankClosing}
             </p>
 

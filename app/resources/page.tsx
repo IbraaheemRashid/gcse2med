@@ -32,7 +32,7 @@ export default function ResourcesPage() {
             lead="Built by our tutors against the specification, and mapped to the exam board your child sits."
           />
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {resourceSamples.map((resource) => (
               <div
                 key={resource.id}
@@ -150,13 +150,9 @@ export default function ResourcesPage() {
             {mistakeBankClosing}
           </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-3">
+          <div className="mt-12 flex flex-wrap justify-center gap-3">
             <BookButton source="resources-mistake-bank" variant="inverse" size="lg" />
-            <ButtonLink
-              href="/assessment"
-              size="lg"
-              className="bg-white/10 text-white ring-1 ring-inset ring-white/25 hover:bg-white/15"
-            >
+            <ButtonLink href="/assessment" variant="onDark" size="lg">
               Try the free assessment
             </ButtonLink>
           </div>

@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
+import { Field, checkboxClasses, inputClasses } from "@/components/ui/Field";
 import { Turnstile } from "@/components/site/Turnstile";
 import { subjects, levels } from "@/content/subjects";
 
@@ -123,7 +124,7 @@ export function ContactForm() {
         <input
           name="marketingConsent"
           type="checkbox"
-          className="mt-0.5 h-4 w-4 rounded border-ink-300 text-brand-600"
+          className={checkboxClasses}
         />
         <span>
           Send me occasional revision tips and updates from GCSE2MED. You can
@@ -154,27 +155,3 @@ export function ContactForm() {
   );
 }
 
-const inputClasses =
-  "mt-1.5 block w-full rounded-lg border border-ink-300 bg-white px-3.5 py-2.5 text-[15px] text-ink-900 placeholder:text-ink-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200";
-
-function Field({
-  label,
-  optional,
-  className = "",
-  children,
-}: {
-  label: string;
-  optional?: boolean;
-  className?: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <label className={`block ${className}`}>
-      <span className="text-sm font-semibold text-ink-800">
-        {label}
-        {optional ? <span className="ml-1.5 font-normal text-ink-500">optional</span> : null}
-      </span>
-      {children}
-    </label>
-  );
-}

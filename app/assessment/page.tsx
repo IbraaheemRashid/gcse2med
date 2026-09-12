@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Container, Section, SectionHeading, Badge } from "@/components/ui/Layout";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Faqs } from "@/components/ui/Faqs";
+import { ButtonLink } from "@/components/ui/Button";
 import { subjects, levels, hasAssessment } from "@/content/subjects";
 import { assessmentFaqs } from "@/content/faqs";
 import { methodology } from "@/content/methodology";
@@ -57,13 +58,12 @@ export default function AssessmentIndexPage() {
                           levels.find((entry) => entry.id === level)?.name ?? level;
 
                         return hasAssessment(subject.id, level) ? (
-                          <Link
+                          <ButtonLink
                             key={level}
                             href={`/assessment/${subject.id}/${level}`}
-                            className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-5 py-2.5 text-[15px] font-semibold text-white transition-colors hover:bg-brand-700"
                           >
                             Start {levelName} &rarr;
-                          </Link>
+                          </ButtonLink>
                         ) : (
                           <Badge
                             key={level}
@@ -125,7 +125,7 @@ export default function AssessmentIndexPage() {
       <Section className="bg-ink-50">
         <Container>
           <SectionHeading eyebrow="Questions" title="Before you start" />
-          <div className="mt-10">
+          <div className="mt-12">
             <Faqs items={assessmentFaqs} />
           </div>
         </Container>

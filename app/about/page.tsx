@@ -68,7 +68,7 @@ export default function AboutPage() {
                 every mistake, and we show you the movement &mdash; topic by topic, week
                 by week.
               </p>
-              <p className="mt-6 border-l-2 border-accent-400 pl-4 text-xl font-bold text-ink-900">
+              <p className="mt-6 border-l-4 border-accent-400 pl-5 text-xl font-bold text-ink-900">
                 {methodologyClosing}
               </p>
             </div>

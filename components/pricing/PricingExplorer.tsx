@@ -69,7 +69,7 @@ export function PricingExplorer() {
               key={tier.id}
               className={`flex flex-col rounded-card border bg-white p-7 ${
                 tier.featured
-                  ? "border-brand-300 shadow-lift ring-1 ring-brand-200"
+                  ? "border-brand-300 shadow-lift ring-1 ring-inset ring-brand-300"
                   : "border-ink-200 shadow-card"
               }`}
             >
@@ -165,7 +165,7 @@ function Choice({
 }) {
   return (
     <label
-      className={`cursor-pointer select-none rounded-full px-4 py-2 text-sm font-semibold ring-1 ring-inset transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent-400 ${
+      className={`cursor-pointer select-none rounded-full px-5 py-2 text-sm font-semibold leading-5 ring-1 ring-inset transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent-400 ${
         checked
           ? "bg-brand-600 text-white ring-brand-600"
           : "bg-white text-ink-700 ring-ink-300 hover:bg-ink-50"

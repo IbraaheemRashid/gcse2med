@@ -160,7 +160,7 @@ function BookingFallback({ onNavigate }: { onNavigate: () => void }) {
         </ButtonLink>
         <Link
           href={`mailto:${site.email}`}
-          className="inline-flex items-center px-4 py-2.5 text-[15px] font-semibold text-brand-700 hover:underline"
+          className="inline-flex items-center px-4 py-2.5 text-[15px] font-semibold leading-6 text-brand-700 hover:underline"
         >
           {site.email}
         </Link>

@@ -97,11 +97,13 @@
     text-wrap: balance;
   }
 
-  /* One visible focus treatment everywhere, including inside dark sections. */
+  /* One visible focus treatment everywhere, including inside dark sections.
+     Deliberately no border-radius here: on :focus-visible it would reshape the
+     element itself, squaring off every pill button the moment it was focused.
+     Outlines already follow the element's own radius. */
   :focus-visible {
     outline: 3px solid var(--color-accent-400);
     outline-offset: 2px;
-    border-radius: 4px;
   }
 }
 

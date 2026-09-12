@@ -36,7 +36,7 @@ export default function SubjectsPricingPage() {
             lead="Every subject is taught at both GCSE and A-level, and our slides and summary sheets are mapped to the board your child sits."
           />
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {subjects.map((subject) => (
               <div
                 key={subject.id}
@@ -91,7 +91,7 @@ export default function SubjectsPricingPage() {
             title="Work out your price"
             lead="Choose how many subjects and how you would like to pay. Multi-subject and annual savings are applied automatically."
           />
-          <div className="mt-10">
+          <div className="mt-12">
             <PricingExplorer />
           </div>
         </Container>
@@ -105,7 +105,7 @@ export default function SubjectsPricingPage() {
             lead="Every tier builds on the one before it, so nothing is taken away as you move up."
           />
 
-          <div className="mt-10 space-y-8">
+          <div className="mt-12 space-y-8">
             {tiers.map((tier) => {
               const inherits = inheritsLabel(tier);
               return (
@@ -114,7 +114,7 @@ export default function SubjectsPricingPage() {
                   id={tier.id}
                   className={`scroll-mt-28 rounded-card border bg-white p-7 sm:p-9 ${
                     tier.featured
-                      ? "border-brand-300 shadow-lift ring-1 ring-brand-200"
+                      ? "border-brand-300 shadow-lift ring-1 ring-inset ring-brand-300"
                       : "border-ink-200 shadow-card"
                   }`}
                 >
@@ -190,7 +190,7 @@ export default function SubjectsPricingPage() {
       <Section className="bg-ink-50">
         <Container>
           <SectionHeading eyebrow="Questions" title="Before you decide" />
-          <div className="mt-10">
+          <div className="mt-12">
             <Faqs items={pricingFaqs} />
           </div>
 
@@ -200,10 +200,7 @@ export default function SubjectsPricingPage() {
             </p>
             <div className="flex shrink-0 flex-wrap gap-3">
               <BookButton source="pricing-footer" variant="inverse" />
-              <ButtonLink
-                href="/assessment"
-                className="bg-brand-700 text-white hover:bg-brand-800"
-              >
+              <ButtonLink href="/assessment" variant="onBrand">
                 Free assessment
               </ButtonLink>
             </div>

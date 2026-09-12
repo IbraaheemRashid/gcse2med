@@ -65,7 +65,7 @@ export function ResultsPanel({
                 {result.focusTopics.map((topic) => (
                   <li
                     key={topic}
-                    className="rounded-full bg-flag-50 px-3.5 py-1.5 text-sm font-semibold text-flag-800 ring-1 ring-inset ring-flag-200"
+                    className="rounded-full bg-flag-50 px-4 py-1.5 text-sm font-semibold text-flag-800 ring-1 ring-inset ring-flag-200"
                   >
                     {topic}
                   </li>

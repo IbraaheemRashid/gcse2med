@@ -47,7 +47,7 @@ export function AssessmentCallout() {
               ))}
             </ul>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8">
               <ButtonLink href="/assessment" size="lg">
                 Take the free assessment
               </ButtonLink>

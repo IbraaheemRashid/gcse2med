@@ -6,7 +6,7 @@ export function Faqs({ items }: { items: Faq[] }) {
     <div className="divide-y divide-ink-200 border-y border-ink-200">
       {items.map((faq) => (
         <details key={faq.question} className="group py-5">
-          <summary className="flex cursor-pointer list-none items-start justify-between gap-6 text-left text-lg font-semibold text-ink-900 marker:hidden">
+          <summary className="flex cursor-pointer list-none items-start justify-between gap-6 text-left text-lg font-semibold text-ink-900 [&::-webkit-details-marker]:hidden">
             {faq.question}
             <span
               aria-hidden="true"

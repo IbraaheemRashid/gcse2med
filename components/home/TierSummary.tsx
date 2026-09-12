@@ -20,7 +20,7 @@ export function TierSummary() {
               key={tier.id}
               className={`relative flex flex-col rounded-card border bg-white p-7 ${
                 tier.featured
-                  ? "border-brand-300 shadow-lift ring-1 ring-brand-200"
+                  ? "border-brand-300 shadow-lift ring-1 ring-inset ring-brand-300"
                   : "border-ink-200 shadow-card"
               }`}
             >

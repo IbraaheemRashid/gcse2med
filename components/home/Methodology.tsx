@@ -12,7 +12,7 @@ export function Methodology() {
           lead="Four steps, in that order, for every student. It is the reason we can tell you what your child needs instead of guessing at it."
         />
 
-        <ol className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {methodology.map((step, index) => (
             <li
               key={step.id}
@@ -34,7 +34,7 @@ export function Methodology() {
           ))}
         </ol>
 
-        <div className="mt-10 flex flex-col items-start gap-4 rounded-card bg-brand-950 px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-10">
+        <div className="mt-12 flex flex-col items-start gap-4 rounded-card bg-brand-950 px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-10">
           <p className="text-xl font-bold text-white sm:text-2xl">
             {methodologyClosing}
           </p>

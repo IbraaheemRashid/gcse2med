@@ -19,7 +19,7 @@ export function Hero() {
             screens. Booking stays reachable from the sticky header. */}
         <div className="relative grid items-center gap-10 py-10 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-24">
           <div>
-            <p className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-brand-700 ring-1 ring-inset ring-brand-200">
+            <p className="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5 text-xs font-semibold text-brand-700 ring-1 ring-inset ring-brand-200">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent-400" />
               Small-group GCSE &amp; A-level tuition
             </p>
