@@ -126,6 +126,10 @@ export default function SubjectsPricingPage() {
                           <Badge className="bg-accent-300 text-ink-900 ring-accent-400">
                             Most popular
                           </Badge>
+                        ) : !tier.accepting ? (
+                          <Badge className="bg-ink-100 text-ink-700 ring-ink-300">
+                            Not currently accepting
+                          </Badge>
                         ) : null}
                       </div>
                       <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
@@ -139,10 +143,25 @@ export default function SubjectsPricingPage() {
                         </span>
                       </p>
                       <div className="mt-5 flex flex-wrap gap-2">
-                        <BookButton
-                          source={`tier-detail-${tier.id}`}
-                          variant={tier.featured ? "primary" : "secondary"}
-                        />
+                        {tier.accepting ? (
+                          <BookButton
+                            source={`tier-detail-${tier.id}`}
+                            variant={tier.featured ? "primary" : "secondary"}
+                          />
+                        ) : (
+                          <p className="text-[15px] leading-relaxed text-ink-600">
+                            <span className="font-semibold text-ink-800">
+                              Not currently accepting new students.
+                            </span>{" "}
+                            <Link
+                              href="/contact"
+                              className="font-semibold text-brand-700 underline underline-offset-4"
+                            >
+                              Ask to be told when it reopens
+                            </Link>
+                            .
+                          </p>
+                        )}
                       </div>
                     </div>
 

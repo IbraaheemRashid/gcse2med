@@ -10,7 +10,7 @@ const included = [
 
 export function AssessmentCallout() {
   return (
-    <Section id="assessment" className="bg-ink-50">
+    <Section id="assessment" className="bg-white">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 overflow-hidden rounded-card shadow-card ring-1 ring-ink-200 lg:order-1">

@@ -36,3 +36,13 @@ export const reviews: Review[] = [
 
 /** Set once the Trustpilot business unit exists; shows the "verified" line. */
 export const trustpilotUrl = "";
+
+/**
+ * Trustpilot business unit ID. Set this and the live Trustpilot widget replaces
+ * the holding state — no code change needed, which is the point: the widget is
+ * already wired up and waiting for the ID.
+ *
+ * Find it in the Trustpilot Business dashboard under Integrations > TrustBox.
+ */
+export const trustpilotBusinessUnitId =
+  process.env.NEXT_PUBLIC_TRUSTPILOT_BUSINESS_UNIT_ID ?? "";

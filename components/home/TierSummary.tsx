@@ -24,9 +24,16 @@ export function TierSummary() {
                   : "border-ink-200 shadow-card"
               }`}
             >
+              {/* Accent yellow is the affirmative badge and stays reserved for
+                  it; a closed tier gets neutral ink so the two never read as
+                  variations on the same status. */}
               {tier.featured ? (
                 <Badge className="absolute -top-3 left-7 bg-accent-300 text-ink-900 ring-accent-400">
                   Most popular
+                </Badge>
+              ) : !tier.accepting ? (
+                <Badge className="absolute -top-3 left-7 bg-ink-100 text-ink-700 ring-ink-300">
+                  Not currently accepting
                 </Badge>
               ) : null}
 
@@ -49,6 +56,9 @@ export function TierSummary() {
 
               <div className="mt-6 grow" />
 
+              {/* A closed tier still links through — parents should be able to
+                  read what they would be growing into. Only the enrolment
+                  language changes. */}
               <ButtonLink
                 href={`/subjects-pricing#${tier.id}`}
                 variant={tier.featured ? "primary" : "secondary"}
@@ -56,6 +66,12 @@ export function TierSummary() {
               >
                 See what&apos;s included
               </ButtonLink>
+
+              {!tier.accepting ? (
+                <p className="mt-3 text-center text-sm text-ink-500">
+                  Closed to new students
+                </p>
+              ) : null}
             </div>
           ))}
         </div>

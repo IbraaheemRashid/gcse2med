@@ -32,6 +32,14 @@ export const site = {
  */
 export const bookingUrl = process.env.NEXT_PUBLIC_BOOKING_URL ?? "";
 
+/**
+ * Introductory video, embedded on the homepage. Any provider whose share URL
+ * works in an iframe (YouTube `/embed/…`, Vimeo `player.vimeo.com/video/…`).
+ * When unset the section renders nothing at all rather than an empty frame, so
+ * the page reads correctly before the video has been filmed.
+ */
+export const introVideoUrl = process.env.NEXT_PUBLIC_INTRO_VIDEO_URL ?? "";
+
 export const primaryNav = [
   { href: "/how-it-works", label: "How it works" },
   { href: "/subjects-pricing", label: "Subjects & pricing" },

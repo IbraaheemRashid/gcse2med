@@ -6,6 +6,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { BookButton } from "@/components/site/BookButton";
 import { methodologyClosing } from "@/content/methodology";
 import { tiers } from "@/content/tiers";
+import { founders } from "@/content/founders";
 
 export const metadata: Metadata = {
   title: "About us",
@@ -47,6 +48,73 @@ export default function AboutPage() {
         title="Built for the students who are trying, and still stuck"
         lead="Most students who miss the grade they wanted were not lazy. They were revising the wrong things, in the wrong way, without anyone measuring whether it was working."
       />
+
+      {/* Founders sit directly under the header, on ink-50: with the section
+          present the page alternates cleanly, and with it absent the PageHeader's
+          bottom border still separates the header from "Why we exist". */}
+      {founders.length > 0 ? (
+        <Section id="founders" className="scroll-mt-28 bg-ink-50">
+          <Container>
+            <SectionHeading
+              eyebrow="Who we are"
+              title="The people teaching your child"
+              lead="We teach the lessons ourselves. If something is not working for your child, you are talking to the people who can change it."
+            />
+
+            <div className="mt-12 grid gap-8 lg:grid-cols-2">
+              {founders.map((founder) => (
+                <article
+                  key={founder.id}
+                  className="rounded-card border border-ink-200 bg-white p-7 shadow-card sm:p-9"
+                >
+                  <div className="flex items-center gap-5">
+                    {founder.photo ? (
+                      <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full ring-1 ring-ink-200">
+                        <Image
+                          src={founder.photo}
+                          alt={`${founder.name}, ${founder.role} at GCSE2MED`}
+                          width={192}
+                          height={192}
+                          sizes="5rem"
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                    ) : null}
+                    <div>
+                      <h3 className="text-2xl font-bold">{founder.name}</h3>
+                      <p className="mt-1 text-sm font-semibold text-brand-700">
+                        {founder.role}
+                      </p>
+                    </div>
+                  </div>
+
+                  {founder.bio.map((paragraph, index) => (
+                    <p
+                      key={index}
+                      className="mt-5 text-[17px] leading-relaxed text-ink-600"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+
+                  {founder.credentials?.length ? (
+                    <ul className="mt-6 flex flex-wrap gap-2">
+                      {founder.credentials.map((credential) => (
+                        <li
+                          key={credential}
+                          className="rounded-full bg-brand-50 px-3.5 py-1.5 text-sm font-semibold text-brand-800 ring-1 ring-inset ring-brand-200"
+                        >
+                          {credential}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      ) : null}
 
       <Section className="bg-white">
         <Container>

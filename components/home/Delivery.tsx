@@ -7,7 +7,7 @@ export function Delivery() {
   const clusterWidth = ["max-w-[9rem]", "max-w-[7rem]", "max-w-[5rem]"];
 
   return (
-    <Section className="bg-white">
+    <Section className="bg-ink-50">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
           <SectionHeading

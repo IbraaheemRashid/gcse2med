@@ -79,6 +79,10 @@ export function PricingExplorer() {
                   <Badge className="bg-accent-300 text-ink-900 ring-accent-400">
                     Most popular
                   </Badge>
+                ) : !tier.accepting ? (
+                  <Badge className="bg-ink-100 text-ink-700 ring-ink-300">
+                    Not currently accepting
+                  </Badge>
                 ) : null}
               </div>
 
@@ -109,13 +113,22 @@ export function PricingExplorer() {
               <div className="mt-6 grow" />
 
               <div className="flex flex-col gap-2">
-                <BookButton
-                  source={`pricing-${tier.id}`}
-                  variant={tier.featured ? "primary" : "secondary"}
-                  className="w-full"
-                >
-                  Book a free consultation
-                </BookButton>
+                {/* Static text rather than a disabled button: a disabled
+                    control is still announced and still takes a tab stop, so
+                    it promises an action that will never happen. */}
+                {tier.accepting ? (
+                  <BookButton
+                    source={`pricing-${tier.id}`}
+                    variant={tier.featured ? "primary" : "secondary"}
+                    className="w-full"
+                  >
+                    Book a free consultation
+                  </BookButton>
+                ) : (
+                  <p className="rounded-full bg-ink-100 px-5 py-2.5 text-center text-[15px] font-semibold leading-6 text-ink-600">
+                    Closed to new students
+                  </p>
+                )}
                 <ButtonLink
                   href={`#${tier.id}`}
                   variant="ghost"

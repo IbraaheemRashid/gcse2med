@@ -2,10 +2,16 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Layout";
 import { ButtonLink } from "@/components/ui/Button";
 import { site } from "@/content/site";
-import { tiers } from "@/content/tiers";
+import { acceptingTiers, tiers } from "@/content/tiers";
 
 export function Hero() {
-  const smallestGroup = Math.min(...tiers.map((tier) => tier.maxGroupSize));
+  // Derived from the tiers a parent can actually enrol in, not every tier we
+  // have defined: quoting the smallest group across all three would advertise a
+  // group size that is closed to new students. Falls back to the full list so
+  // the line never disappears if every tier is temporarily closed.
+  const sized = acceptingTiers.length > 0 ? acceptingTiers : tiers;
+  const smallestGroup = Math.min(...sized.map((tier) => tier.maxGroupSize));
+  const largestGroup = Math.max(...sized.map((tier) => tier.maxGroupSize));
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white">
@@ -52,8 +58,14 @@ export function Hero() {
 
             <p className="mt-5 text-sm text-ink-600">
               Free, no obligation, about fifteen minutes. Groups of{" "}
-              {smallestGroup}&ndash;{Math.max(...tiers.map((tier) => tier.maxGroupSize))} students,
-              never more.
+              {smallestGroup === largestGroup ? (
+                <>{largestGroup} students</>
+              ) : (
+                <>
+                  {smallestGroup}&ndash;{largestGroup} students
+                </>
+              )}
+              , never more.
             </p>
           </div>
 

@@ -18,7 +18,20 @@ export type Tier = {
   /** What this tier adds. Earlier tiers are inherited via `inherits`. */
   features: string[];
   inherits: TierId[];
-  /** Highlighted as the recommended option in the UI. */
+  /**
+   * False while the tier is closed to new students. The card still shows the
+   * price and everything included — parents should see the ladder they grow
+   * into — but the CTA is replaced by a "not currently accepting" note.
+   *
+   * Required rather than optional so a new tier cannot silently default to
+   * open: opening a tier to enrolment should be a deliberate edit here.
+   */
+  accepting: boolean;
+  /**
+   * Highlighted as the recommended option in the UI. Only ever set this on a
+   * tier that is `accepting` — "Most popular" on something nobody can buy
+   * reads as a bug, and it drives the button variant as well as the badge.
+   */
   featured?: boolean;
   /** Rendered with a link to /guarantee-terms. */
   guarantee?: string;
@@ -43,6 +56,8 @@ export const tiers: Tier[] = [
       "Core flashcards",
       "Email support (48hr response)",
     ],
+    accepting: true,
+    featured: true,
   },
   {
     id: "success",
@@ -66,7 +81,7 @@ export const tiers: Tier[] = [
       "Regular parent meetings (termly)",
       "Exclusive Discord access (24hr response)",
     ],
-    featured: true,
+    accepting: false,
   },
   {
     id: "excellence",
@@ -84,9 +99,13 @@ export const tiers: Tier[] = [
       "Future application advice where applicable",
       "WhatsApp support (fastest response)",
     ],
+    accepting: false,
     guarantee: "Grade A guarantee",
   },
 ];
+
+/** The tiers a parent can actually enrol in today. */
+export const acceptingTiers = tiers.filter((tier) => tier.accepting);
 
 export const tierById = Object.fromEntries(
   tiers.map((tier) => [tier.id, tier]),
