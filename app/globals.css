@@ -43,9 +43,9 @@
   --color-flag-800: #991b1b;
   --color-flag-900: #7f1d1d;
 
-  --color-ink-50: #f8fafc;
-  --color-ink-100: #f1f5f9;
-  --color-ink-200: #e2e8f0;
+  --color-ink-50: #eaeff6;
+  --color-ink-100: #e2e9f2;
+  --color-ink-200: #d7dfea;
   --color-ink-300: #cbd5e1;
   --color-ink-400: #94a3b8;
   --color-ink-500: #64748b;
@@ -57,10 +57,18 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-jakarta), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
-  --radius-card: 1rem;
+  /* FLAT TREATMENT. 4px rather than 16px: a large radius reads friendly and
+     soft, a small one reads precise. Matches the register of the reference
+     site, which sets 0.25rem. */
+  --radius-card: 0.25rem;
 
-  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 8px 24px -12px rgb(15 23 42 / 0.12);
-  --shadow-lift: 0 2px 4px rgb(15 23 42 / 0.05), 0 18px 40px -18px rgb(15 23 42 / 0.22);
+  /* FLAT TREATMENT. The reference site's most common box-shadow declaration is
+     `none`; it separates objects with hairline borders on tinted grounds and
+     saves shadows for things that genuinely float (drawers, sticky bars).
+     Kept as tokens rather than deleted so every shadow-card/shadow-lift class
+     in the codebase still resolves — this is one switch, not a sweep. */
+  --shadow-card: none;
+  --shadow-lift: none;
 
   --animate-marquee: marquee 40s linear infinite;
 }
@@ -92,10 +100,17 @@
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    color: var(--color-ink-900);
-    letter-spacing: -0.02em;
+    /* FLAT TREATMENT: pure black, not slate. Maximum contrast on white. */
+    color: #000000;
     text-wrap: balance;
   }
+
+  /* Tracking tightens as type grows — the larger the size, the more the gaps
+     between letters read as slack. One global value cannot do both ends. */
+  h1 { letter-spacing: -0.035em; }
+  h2 { letter-spacing: -0.028em; }
+  h3 { letter-spacing: -0.02em; }
+  h4 { letter-spacing: -0.015em; }
 
   /* One visible focus treatment everywhere, including inside dark sections.
      Deliberately no border-radius here: on :focus-visible it would reshape the

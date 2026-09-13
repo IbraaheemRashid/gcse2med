@@ -108,7 +108,7 @@ export function VerticalVideo({
 
   return (
     <div
-      className={`relative mx-auto aspect-[9/16] w-full max-w-[340px] overflow-hidden rounded-[1.75rem] bg-ink-900 shadow-lift ring-1 ring-ink-900/10 sm:max-w-[380px] ${className}`}
+      className={`relative mx-auto aspect-[9/16] w-full max-w-[340px] overflow-hidden rounded-md bg-ink-900 shadow-lift ring-1 ring-ink-900/10 sm:max-w-[380px] ${className}`}
       style={{ maxHeight: "70vh" }}
     >
       <video
@@ -138,7 +138,7 @@ export function VerticalVideo({
         className="absolute inset-0 flex items-center justify-center focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-[-6px] focus-visible:outline-accent-400"
       >
         {!playing || !started ? (
-          <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/95 shadow-lift">
+          <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/95 shadow-[0_4px_16px_rgb(0_0_0_/_0.3)]">
             <svg viewBox="0 0 24 24" aria-hidden="true" className="ml-1 h-7 w-7 fill-ink-900">
               <path d="M8 5v14l11-7z" />
             </svg>

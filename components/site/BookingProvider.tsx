@@ -101,7 +101,7 @@ export function BookingProvider({ children }: { children: ReactNode }) {
             role="dialog"
             aria-modal="true"
             aria-labelledby="booking-dialog-title"
-            className="flex max-h-[92vh] w-full max-w-3xl flex-col overflow-hidden rounded-t-2xl bg-white shadow-lift sm:rounded-2xl"
+            className="flex max-h-[92vh] w-full max-w-3xl flex-col overflow-hidden rounded-t-2xl bg-white shadow-[0_18px_48px_-16px_rgb(15_23_42_/_0.35)] sm:rounded-2xl"
           >
             <div className="flex items-start justify-between gap-4 border-b border-ink-200 px-6 py-4">
               <div>

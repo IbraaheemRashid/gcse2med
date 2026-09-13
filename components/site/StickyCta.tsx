@@ -29,7 +29,7 @@ export function StickyCta() {
          swallow taps on the page beneath it. */
       className="pointer-events-none fixed inset-x-0 bottom-0 z-30 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] lg:hidden"
     >
-      <div className="pointer-events-auto mx-auto flex max-w-md items-center gap-3 rounded-full border border-ink-200 bg-white/95 p-1.5 pl-4 shadow-lift backdrop-blur">
+      <div className="pointer-events-auto mx-auto flex max-w-md items-center gap-3 rounded-full border border-ink-200 bg-white/95 p-1.5 pl-4 shadow-[0_18px_48px_-16px_rgb(15_23_42_/_0.35)] backdrop-blur">
         <p className="min-w-0 flex-1 text-[13px] font-semibold leading-tight text-ink-800">
           Find out where your child stands
         </p>
