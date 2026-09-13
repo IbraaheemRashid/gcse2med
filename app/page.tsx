@@ -8,6 +8,7 @@ import { AssessmentCallout } from "@/components/home/AssessmentCallout";
 import { Delivery } from "@/components/home/Delivery";
 import { MistakeBank } from "@/components/home/MistakeBank";
 import { Founders } from "@/components/home/Founders";
+import { HomeFaqs } from "@/components/home/HomeFaqs";
 import { FinalCta } from "@/components/home/FinalCta";
 import { site } from "@/content/site";
 
@@ -39,6 +40,7 @@ export default function HomePage() {
       <Delivery />
       <MistakeBank />
       <Founders />
+      <HomeFaqs />
       <FinalCta />
     </>
   );

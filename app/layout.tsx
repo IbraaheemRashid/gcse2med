@@ -7,6 +7,7 @@ import { site } from "@/content/site";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { BookingProvider } from "@/components/site/BookingProvider";
+import { StickyCta } from "@/components/site/StickyCta";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -78,6 +79,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             {children}
           </main>
           <Footer />
+          <StickyCta />
         </BookingProvider>
         {/* The insights script only exists on Vercel — rendering it elsewhere
             just 404s in the console on local and self-hosted runs. */}

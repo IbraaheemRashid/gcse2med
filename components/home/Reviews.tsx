@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Script from "next/script";
 import { Container, Section, SectionHeading } from "@/components/ui/Layout";
+import { ReviewMessages } from "./ReviewMessages";
 import {
   reviews,
   trustpilotBusinessUnitId,
@@ -76,47 +76,7 @@ export function Reviews() {
             </p>
           </div>
         ) : (
-          <ul className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {reviews.map((review) => (
-              <li
-                key={review.id}
-                className="flex flex-col rounded-card border border-ink-200 bg-white p-6 shadow-card"
-              >
-                {review.rating ? (
-                  <p className="text-accent-500" aria-label={`${review.rating} out of 5`}>
-                    <span aria-hidden="true">{"★".repeat(review.rating)}</span>
-                  </p>
-                ) : null}
-                <blockquote className="mt-3 grow text-[15px] leading-relaxed text-ink-700">
-                  &ldquo;{review.quote}&rdquo;
-                </blockquote>
-
-                {/* The original message, where a parent sent one. Shown under
-                    the quote rather than instead of it: the typed text stays
-                    selectable and readable to a screen reader. */}
-                {review.screenshot ? (
-                  <div className="mt-4 overflow-hidden rounded-lg border border-ink-200">
-                    <Image
-                      src={review.screenshot}
-                      alt={`Message from ${review.author}`}
-                      width={800}
-                      height={600}
-                      sizes="(min-width: 1024px) 20rem, (min-width: 768px) 45vw, 90vw"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                ) : null}
-
-                <footer className="mt-5 border-t border-ink-200 pt-4 text-sm">
-                  <p className="font-semibold text-ink-900">{review.author}</p>
-                  <p className="text-ink-500">
-                    {review.relation}
-                    {review.subject ? ` · ${review.subject}` : ""}
-                  </p>
-                </footer>
-              </li>
-            ))}
-          </ul>
+          <ReviewMessages reviews={reviews} />
         )}
 
         {trustpilotUrl && !hasTrustpilot ? (

@@ -3,9 +3,11 @@ import Image from "next/image";
 import { Container, Section, SectionHeading, Eyebrow } from "@/components/ui/Layout";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { ButtonLink } from "@/components/ui/Button";
+import { VerticalVideo } from "@/components/ui/VerticalVideo";
 import { BookButton } from "@/components/site/BookButton";
 import { methodology, methodologyClosing, gapTypes } from "@/content/methodology";
 import { tiers } from "@/content/tiers";
+import { lessonVideo } from "@/content/video";
 
 export const metadata: Metadata = {
   title: "How it works",
@@ -60,7 +62,34 @@ export default function HowItWorksPage() {
         </Container>
       </Section>
 
+      {/* The payoff for "See what that looks like in a lesson" on the homepage,
+          which has always linked here. Click-to-play rather than autoplay: it
+          runs a minute and a half and deserves sound, so starting it should be
+          the visitor's decision. */}
       <Section className="bg-ink-50">
+        <Container>
+          <div className="grid items-center gap-10 lg:grid-cols-[auto_1fr] lg:gap-16">
+            <VerticalVideo video={lessonVideo} mode="click" />
+
+            <div>
+              <Eyebrow>Watch a lesson</Eyebrow>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+                This is what the teaching actually looks like
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-ink-600">
+                {lessonVideo.summary}
+              </p>
+              <p className="mt-4 text-[15px] leading-relaxed text-ink-600">
+                Nothing here is staged for a prospectus. It is the same working, at
+                the same pace, with the same checking that the student has followed
+                it, that happens in a lesson your child would sit in.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="bg-white">
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
@@ -110,7 +139,7 @@ export default function HowItWorksPage() {
         </Container>
       </Section>
 
-      <Section className="bg-white">
+      <Section className="bg-ink-50">
         <Container>
           <SectionHeading
             eyebrow="Step 2, in practice"

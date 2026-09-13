@@ -28,8 +28,11 @@ export const pricingFaqs: Faq[] = [
   },
   {
     question: "What does the Grade A guarantee actually cover?",
+    // NOTE(client): Excellence is closed to new students, so this has to say so
+    // — the guarantee is real but not currently purchasable. Reword when the
+    // tier reopens (content/tiers.ts, `accepting`).
     answer:
-      "It applies to the Excellence tier and is subject to conditions on attendance, homework completion and how long the student has been with us. The full terms are set out on our grade guarantee page.",
+      "It applies to the Excellence tier, and is subject to conditions on attendance, homework completion and how long the student has been with us. Excellence is not taking new students at the moment, so the guarantee is not something you can buy into today — we would rather say that plainly than let it read as an offer. The full terms are set out on our grade guarantee page.",
   },
   {
     question: "Is there a contract or a minimum term?",

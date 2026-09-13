@@ -7,7 +7,9 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t border-ink-200 bg-ink-50">
+    /* pb on small screens clears the fixed StickyCta bar, which would otherwise
+       sit over the legal line at the very bottom of the page. */
+    <footer className="mt-auto border-t border-ink-200 bg-ink-50 pb-20 lg:pb-0">
       <Container className="py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
