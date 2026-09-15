@@ -61,7 +61,7 @@ export default function AboutPage() {
               lead="We teach the lessons ourselves. If something is not working for your child, you are talking to the people who can change it."
             />
 
-            <div className="mt-12 grid gap-8 lg:grid-cols-2">
+            <div className="mt-12 grid items-start gap-8 lg:grid-cols-2">
               {founders.map((founder) => (
                 <article
                   key={founder.id}

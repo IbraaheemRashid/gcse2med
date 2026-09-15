@@ -28,8 +28,8 @@ export function IntroVideo() {
               will tell you what your child needs.
             </p>
             <div className="mt-8">
-              <ButtonLink href="/assessment" size="lg">
-                Take the free assessment
+              <ButtonLink href="/about#founders" size="lg">
+                Meet the founders
               </ButtonLink>
             </div>
           </div>

@@ -7,8 +7,7 @@ import { founders } from "@/content/founders";
  * Compact founder strip. The full bios live on /about; this is the trust signal
  * on the homepage, which matters most while there are no reviews yet.
  *
- * Renders nothing until `content/founders.ts` has entries — see that file for
- * why it ships empty.
+ * Uses the same supplied biographies as the About page.
  */
 export function Founders() {
   if (founders.length === 0) return null;

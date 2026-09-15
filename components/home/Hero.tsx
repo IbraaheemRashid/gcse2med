@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/ui/Layout";
 import { ButtonLink } from "@/components/ui/Button";
 import { site } from "@/content/site";
@@ -29,6 +30,10 @@ export function Hero() {
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent-400" />
               Small-group GCSE &amp; A-level tuition
             </p>
+
+            <Link href="#founder-class" className="mt-4 block text-sm font-semibold text-brand-700 underline underline-offset-4">
+              Founder Class: 5 free places per subject →
+            </Link>
 
             <h1 className="mt-5 text-[2rem] font-extrabold leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
               The Support that understands{" "}
