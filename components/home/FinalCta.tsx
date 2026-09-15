@@ -11,7 +11,7 @@ export function FinalCta() {
             Start with a conversation, not a commitment
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-brand-50">
-            Fifteen minutes on the phone. We will ask where your child is now and
+            A free 30-minute video call with the founders, student and parent. We will ask where your child is now and
             what you want by results day &mdash; and if we are not the right fit,
             we will tell you.
           </p>

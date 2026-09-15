@@ -30,7 +30,7 @@ export default function ContactPage() {
               <div className="rounded-card bg-ink-50 p-6">
                 <h2 className="text-lg font-bold">Would rather just talk?</h2>
                 <p className="mt-2 text-[15px] leading-relaxed text-ink-600">
-                  Book a free fifteen-minute consultation at a time that suits you.
+                  Book a free 30-minute video consultation at a time that suits you.
                   No obligation, and no sales script.
                 </p>
                 <div className="mt-5">

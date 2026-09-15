@@ -5,10 +5,6 @@ import { Reviews } from "@/components/home/Reviews";
 import { Methodology } from "@/components/home/Methodology";
 import { IntroVideo } from "@/components/home/IntroVideo";
 import { TierSummary } from "@/components/home/TierSummary";
-import { AssessmentCallout } from "@/components/home/AssessmentCallout";
-import { Delivery } from "@/components/home/Delivery";
-import { MistakeBank } from "@/components/home/MistakeBank";
-import { Founders } from "@/components/home/Founders";
 import { HomeFaqs } from "@/components/home/HomeFaqs";
 import { FinalCta } from "@/components/home/FinalCta";
 import { site } from "@/content/site";
@@ -20,19 +16,15 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <>
+    <div className="home-refresh">
       <Hero />
       <Reviews />
-      <Methodology />
-      <IntroVideo />
       <TierSummary />
+      <IntroVideo />
+      <Methodology />
       <FounderClass />
-      <AssessmentCallout />
-      <Delivery />
-      <MistakeBank />
-      <Founders />
       <HomeFaqs />
       <FinalCta />
-    </>
+    </div>
   );
 }

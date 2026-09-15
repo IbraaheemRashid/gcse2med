@@ -9,7 +9,7 @@ import { methodology } from "@/content/methodology";
 export const metadata: Metadata = {
   title: "Book a free consultation",
   description:
-    "Book a free fifteen-minute consultation with GCSE2MED to talk through where your child is and what would move them forward.",
+    "Book a free 30-minute video consultation with GCSE2MED to talk through where your child is and what would move them forward.",
   alternates: { canonical: "/book" },
 };
 
@@ -25,8 +25,8 @@ export default function BookPage() {
     <>
       <PageHeader
         eyebrow="Free consultation"
-        title="Fifteen minutes. No obligation."
-        lead="A short call to understand your child's situation before anyone commits to anything."
+        title="30 minutes. Face to face. No obligation."
+        lead="A video call with the founders, student and parent to understand what is going wrong and see whether GCSE2MED can help."
       />
 
       <Section className="bg-white">

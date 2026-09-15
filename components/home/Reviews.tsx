@@ -23,16 +23,22 @@ import {
 export function Reviews() {
   const hasTrustpilot = Boolean(trustpilotBusinessUnitId);
 
+  if (!hasTrustpilot && reviews.length === 0 && !trustpilotUrl) return (
+    <section className="border-b border-ink-100 bg-white py-6">
+      <Container><div className="flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between"><h2 className="font-semibold text-brand-950">What students say</h2><p className="text-ink-500">Our first family reviews are on their way.</p></div></Container>
+    </section>
+  );
+
   return (
-    <Section className="bg-ink-50">
+    <Section id="reviews" className="bg-ink-50">
       <Container>
         <SectionHeading
-          eyebrow="What parents say"
-          title="Reviews from the families we work with"
+          eyebrow="What students say"
+          title="A little support. A real difference."
           lead={
             hasTrustpilot || trustpilotUrl
-              ? "Verified on Trustpilot, so you are reading from real people rather than a page we wrote about ourselves."
-              : undefined
+              ? "Read feedback from our families on Trustpilot."
+              : "Messages from students about our tuition and live revision sessions. Excerpts in their own words."
           }
           align="center"
         />
@@ -76,7 +82,10 @@ export function Reviews() {
             </p>
           </div>
         ) : (
-          <ReviewMessages reviews={reviews} />
+          <>
+            <ReviewMessages reviews={reviews} />
+            <p className="mt-3 text-xs leading-relaxed text-ink-500">Feedback includes live revision sessions as well as tuition. Results mentioned are individual students’ reports.</p>
+          </>
         )}
 
         {trustpilotUrl && !hasTrustpilot ? (

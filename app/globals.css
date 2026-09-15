@@ -132,3 +132,13 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Homepage experiment: wider compositions and softer media, scoped to this page. */
+.home-refresh .max-w-6xl { max-width: 80rem; }
+.home-refresh > section.py-16 { padding-block: 3.5rem; }
+.home-refresh .rounded-card { border-radius: 1.5rem; }
+.home-refresh #meet-us video { object-fit: contain; }
+.home-refresh #meet-us .aspect-\[9\/16\] { border-radius: 1.5rem; }
+@media (min-width: 640px) {
+  .home-refresh > section.py-16 { padding-block: 4.5rem; }
+}

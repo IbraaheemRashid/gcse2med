@@ -40,6 +40,7 @@ export default function SubjectsPricingPage() {
             {subjects.map((subject) => (
               <div
                 key={subject.id}
+                id={`subject-${subject.id}`}
                 className="flex flex-col rounded-card border border-ink-200 bg-white p-6 shadow-card"
               >
                 <div className="flex flex-wrap items-center gap-2">

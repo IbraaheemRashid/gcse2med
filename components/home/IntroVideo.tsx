@@ -11,13 +11,13 @@ import { introVideo } from "@/content/video";
  */
 export function IntroVideo() {
   return (
-    <Section className="bg-white">
+    <Section id="meet-us" className="bg-brand-50">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-[1fr_auto] lg:gap-16">
           <div>
             <Eyebrow>Meet us</Eyebrow>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              We teach the lessons ourselves
+              Meet the people in your corner
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-ink-600">
               {introVideo.summary}
@@ -27,6 +27,7 @@ export function IntroVideo() {
               in this video are the people in the lesson, and they are the ones who
               will tell you what your child needs.
             </p>
+            <p className="mt-5 font-semibold text-brand-950">Yahiya &amp; Subayr · Co-Founders</p>
             <div className="mt-8">
               <ButtonLink href="/about#founders" size="lg">
                 Meet the founders

@@ -100,7 +100,7 @@ export function assessmentReportEmail(result: AssessmentResult): {
     }
 
     <div style="margin:28px 0 0;padding-top:20px;border-top:1px solid #e2e8f0;">
-      <p style="margin:0 0 14px;line-height:1.7;">Want to talk through what this means and what to do next? A free consultation takes about fifteen minutes.</p>
+      <p style="margin:0 0 14px;line-height:1.7;">Want to talk through what this means and what to do next? A free consultation is a 30-minute video call with the founders, student and parent to understand what is going wrong and whether GCSE2MED can help.</p>
       <a href="${site.url}/book" style="display:inline-block;background:${BRAND};color:#ffffff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:8px;">Book a free consultation</a>
     </div>`;
 

@@ -189,7 +189,7 @@ export function ResultsPanel({
                 Talk it through with us
               </h2>
               <p className="mt-2 text-[15px] leading-relaxed text-brand-100">
-                Fifteen minutes, free, no obligation. We will go through what this
+                A free 30-minute video call with the founders, student and parent. We will go through what this
                 result actually means and what we would do about it.
               </p>
               <div className="mt-5">

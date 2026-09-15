@@ -2,101 +2,49 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Layout";
 import { ButtonLink } from "@/components/ui/Button";
-import { site } from "@/content/site";
-import { acceptingTiers, tiers } from "@/content/tiers";
+import { BookButton } from "@/components/site/BookButton";
+import { tierById } from "@/content/tiers";
+import { formatGBP, priceFor } from "@/content/pricing";
 
 export function Hero() {
-  // Derived from the tiers a parent can actually enrol in, not every tier we
-  // have defined: quoting the smallest group across all three would advertise a
-  // group size that is closed to new students. Falls back to the full list so
-  // the line never disappears if every tier is temporarily closed.
-  const sized = acceptingTiers.length > 0 ? acceptingTiers : tiers;
-  const smallestGroup = Math.min(...sized.map((tier) => tier.maxGroupSize));
-  const largestGroup = Math.max(...sized.map((tier) => tier.maxGroupSize));
-
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-accent-200/40 blur-3xl"
-      />
+    <section className="bg-white">
       <Container>
-        {/* One CTA, above the fold on every breakpoint: the copy above it is
-            kept deliberately tight and the image sits below the fold on small
-            screens. Booking stays reachable from the sticky header. */}
-        <div className="relative grid items-center gap-10 py-10 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-24">
+        <div className="grid items-center gap-10 py-10 lg:grid-cols-[1.05fr_1fr] lg:gap-12">
           <div>
-            <p className="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5 text-xs font-semibold text-brand-700 ring-1 ring-inset ring-brand-200">
-              <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent-400" />
-              Small-group GCSE &amp; A-level tuition
-            </p>
-
-            <Link href="#founder-class" className="mt-4 block text-sm font-semibold text-brand-700 underline underline-offset-4">
-              Founder Class: 5 free places per subject →
-            </Link>
-
-            <h1 className="mt-5 text-[2rem] font-extrabold leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
-              The Support that understands{" "}
-              {/* Marker-pen highlight: a thick underline pulled up into the
-                  glyphs. text-underline-offset is measured from the BASELINE, so
-                  this stays put at any font size — a positioned bar or a
-                  background gradient both drift with the font's descent metric.
-                  Glyphs paint over their own decoration, so the text stays crisp. */}
-              <span className="[text-decoration-color:var(--color-accent-300)] [text-decoration-line:underline] [text-decoration-skip-ink:none] [text-decoration-thickness:0.34em] [text-underline-offset:-0.22em]">
-                YOUR
-              </span>{" "}
-              child.
+            <p className="text-sm font-semibold text-brand-700">GCSE &amp; A-level · Maths &amp; Sciences</p>
+            <h1 className="mt-5 text-[2.6rem] font-bold leading-[1.04] text-brand-950 sm:text-5xl lg:text-[3.3rem]">
+              Small-group tuition.<br /><span className="text-brand-600">A clear plan for your child.</span>
             </h1>
-
-            <p className="mt-4 text-lg font-semibold text-brand-800 sm:text-xl">
-              {site.strapline}
-            </p>
-
-            <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5">
-              <ButtonLink href="/assessment" size="lg">
-                Take the free assessment
-              </ButtonLink>
-              <p className="text-base font-semibold text-ink-800">
-                Find out where your child stands.
-              </p>
+            <p className="mt-5 max-w-lg text-lg leading-relaxed text-ink-600">Find the gaps. Build understanding. Walk into the next exam knowing what to do.</p>
+            <ul className="mt-6 space-y-3 text-base text-brand-950">
+              {["A one-hour lesson every week", `No more than ${tierById.essential.maxGroupSize} students in an Essential group`, "Revision resources to keep learning between lessons"].map((item) => (
+                <li key={item} className="flex items-start gap-3"><span aria-hidden="true" className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-sm text-brand-700">✓</span>{item}</li>
+              ))}
+            </ul>
+            <p className="mt-7 text-brand-950">Essential from <strong className="text-2xl">{formatGBP(priceFor("essential", 1, "monthly"))}</strong> /month per subject</p>
+            <div className="mt-5 flex flex-col items-stretch gap-3 sm:items-start">
+              <ButtonLink href="/assessment" size="lg" className="w-full sm:max-w-sm">Take the free assessment <span aria-hidden="true">→</span></ButtonLink>
+              <BookButton source="hero-refresh" variant="ghost" size="sm">Or book a free video consultation</BookButton>
             </div>
-
-            <p className="mt-5 text-sm text-ink-600">
-              Free, no obligation, about fifteen minutes. Groups of{" "}
-              {smallestGroup === largestGroup ? (
-                <>{largestGroup} students</>
-              ) : (
-                <>
-                  {smallestGroup}&ndash;{largestGroup} students
-                </>
-              )}
-              , never more.
-            </p>
+            <p className="mt-3 text-xs text-ink-500">No account needed for the assessment. No obligation to enrol.</p>
           </div>
-
-          <div className="relative lg:justify-self-end">
-            <div className="overflow-hidden rounded-card shadow-lift ring-1 ring-ink-200">
-              <Image
-                src="/images/hero-graduation.jpg"
-                alt="A graduation cap held up in the air outside a university building"
-                width={1800}
-                height={1200}
-                priority
-                sizes="(min-width: 1024px) 42rem, 100vw"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="absolute -bottom-5 left-4 hidden rounded-xl bg-white px-4 py-3 shadow-card ring-1 ring-ink-200 sm:block lg:-left-8">
-              <p className="text-xs font-semibold uppercase tracking-wider text-ink-500">
-                Every student starts here
-              </p>
-              <p className="mt-0.5 text-sm font-semibold text-ink-900">
-                Diagnose &rarr; Expose &rarr; Action &rarr; Review
-              </p>
-            </div>
+          <div className="overflow-hidden rounded-3xl">
+            <Image
+              src="/images/hero-graduation.jpg"
+              alt="A graduation cap held up in the air outside a university building"
+              width={1800}
+              height={1200}
+              priority
+              sizes="(min-width: 1024px) 46vw, 100vw"
+              className="h-auto w-full object-cover"
+            />
           </div>
         </div>
       </Container>
+      <div className="border-y border-brand-100 bg-brand-50">
+        <Container><div className="flex flex-col gap-2 py-4 text-sm sm:flex-row sm:items-center sm:justify-between"><p className="font-medium text-brand-950"><span className="mr-2 inline-block rounded-full bg-accent-300 px-2.5 py-1 text-xs font-bold">Founder Class</span>Five free places per core subject. Selection underway.</p><Link href="#founder-class" className="font-semibold text-brand-700 underline underline-offset-4">Find out more →</Link></div></Container>
+      </div>
     </section>
   );
 }

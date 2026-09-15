@@ -14,7 +14,7 @@ export const pricingFaqs: Faq[] = [
   {
     question: "What happens in the free consultation?",
     answer:
-      "A short call — usually fifteen minutes. We ask about where your child is now, what they find hardest, and what you want by results day. If we are not the right fit, we will say so.",
+      "A free 30-minute video call with the founders, student and parent. We ask about where your child is now, what they find hardest, and what you want by results day. If we are not the right fit, we will say so.",
   },
   {
     question: "Do you cover our exam board?",

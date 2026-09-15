@@ -109,7 +109,7 @@ export function BookingProvider({ children }: { children: ReactNode }) {
                   Book your free consultation
                 </h2>
                 <p className="mt-1 text-sm text-ink-600">
-                  About fifteen minutes. No obligation, and no sales script.
+                  A free 30-minute video call with the founders, student and parent. We will explore what is going wrong and whether GCSE2MED can help.
                 </p>
               </div>
               <Button
