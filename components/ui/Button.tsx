@@ -15,7 +15,7 @@ const base =
   // `align-middle` kills the baseline descender gap these leave under themselves
   // when they sit as an inline-level box in a plain block.
   // `text-center` matters for w-full buttons whose label wraps.
-  "inline-flex items-center justify-center gap-2 rounded-full text-center align-middle " +
+  "inline-flex min-h-11 max-w-full items-center justify-center gap-2 rounded-full text-center align-middle " +
   "font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60";
 
 const variants: Record<Variant, string> = {

@@ -142,3 +142,9 @@
 @media (min-width: 640px) {
   .home-refresh > section.py-16 { padding-block: 4.5rem; }
 }
+
+/* Keep long labels and user-supplied content within narrow phone layouts. */
+@layer base {
+  body { overflow-wrap: break-word; }
+  input, select, textarea { font-size: max(1rem, 16px); }
+}

@@ -7,7 +7,7 @@ export const site = {
   name: "GCSE2MED",
   /** Used in <title> templates and structured data. */
   legalName: "GCSE2MED",
-  tagline: "The Support that understands YOUR child.",
+  tagline: "The support that understands YOUR child",
   strapline: "Small groups. Expert tutors. Targeted support. Measurable progress.",
   description:
     "Small-group GCSE and A-level tuition in Biology, Chemistry, Physics and Maths. We diagnose what is holding your child back, target it, and measure the progress.",
@@ -61,6 +61,7 @@ export const footerNav = {
     { href: "/book", label: "Book a consultation" },
   ],
   Legal: [
+    { href: "/about#safeguarding", label: "Safeguarding" },
     { href: "/privacy", label: "Privacy policy" },
     { href: "/terms", label: "Terms of service" },
     { href: "/guarantee-terms", label: "Grade guarantee terms" },

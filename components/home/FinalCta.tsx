@@ -17,7 +17,7 @@ export function FinalCta() {
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <BookButton source="final-cta" variant="inverse" size="lg" />
-            <ButtonLink href="/assessment" variant="onBrand" size="lg">
+            <ButtonLink href="/assessment" variant="accent" size="lg">
               Take the free assessment first
             </ButtonLink>
           </div>

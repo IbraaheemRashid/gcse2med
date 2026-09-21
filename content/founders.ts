@@ -18,7 +18,7 @@ export type Founder = {
   credentials?: string[];
 };
 
-// Subayr's full biography and founder portraits can be added when supplied.
+// Biographies supplied by the founders; **text** marks their chosen emphasis.
 export const founders: Founder[] = [
   {
     id: "yahiya",
@@ -26,16 +26,18 @@ export const founders: Founder[] = [
     role: "Co-Founder · Third-year medical student",
     strapline: "Giving students the support, direction and belief I wish I’d had earlier.",
     bio: [
-      "I’m Yahiya, Co-Founder of GCSE2Med. I grew up in an area where going to university isn’t the norm, and I attended a school with limited resources. I worked hard and did well in my GCSEs, but when I moved to college, things changed. Despite being in a much better academic environment, my grades started to slip. I lost motivation, struggled to believe that I was capable of achieving highly and, honestly, didn’t really know how to revise properly.",
-      "But I never gave up. I kept working, kept learning and eventually found my way into medicine. Now, as a third-year medical student, I’ve spent years learning about what actually makes studying effective, speaking to some of the highest-achieving students in the country and, alongside my studies, talking to and guiding almost 1,000 students about how they can make their own academic journey smoother.",
-      "I’ve made plenty of mistakes along the way, and that’s taught me that doing well isn’t just about working harder. It’s about believing you’re capable, knowing how to work effectively and having someone there to guide you when you don’t know what to do next. That’s why I created GCSE2Med — to give students the support, direction and belief that I wish I’d had earlier.",
+      "I didn’t have much guidance when it came to education, and going to university was rare where I grew up. I worked hard and did well at GCSE, but when I got to college, I struggled. I didn’t really know **how to study effectively**, and my grades started to slip.",
+      "Over time, I learned what actually works, found my way into **medical school**, and have since spoken to and guided almost **1,000 students** on their academic journeys. **I created GCSE2MED to give students the guidance, support and confidence I wish I’d had earlier.**",
     ],
   },
   {
     id: "subayr",
     name: "Subayr",
     role: "Co-Founder",
-    strapline: "I’m Subayr, the other half of GCSE2Med.",
-    bio: ["I’m Subayr, the other half of GCSE2Med."],
+    strapline: "Six years of tutoring, with guidance that helps every student reach their potential.",
+    bio: [
+      "Throughout school, I was fortunate to have great people around me who guided me, answered my questions and pushed me to believe I could achieve highly. That support played a huge role in helping me succeed academically and eventually make my way into medicine.",
+      "I’ve been tutoring for around **six years**, working with students from different backgrounds and abilities. Over that time, I’ve learnt that every student learns differently, and sometimes the right explanation or guidance can make all the difference. **Now, as a medical student, I want to use what I’ve learnt from my own journey and years of tutoring to give students the guidance, support and confidence they need to reach their potential. That’s why I created GCSE2MED.**",
+    ],
   },
 ];

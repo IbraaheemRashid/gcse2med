@@ -54,7 +54,7 @@ export function Header() {
 
           <button
             type="button"
-            className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold text-ink-800 hover:bg-ink-100 lg:hidden"
+            className="inline-flex min-h-11 items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold text-ink-800 hover:bg-ink-100 lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((value) => !value)}
@@ -79,7 +79,7 @@ export function Header() {
       </Container>
 
       {open ? (
-        <div id="mobile-nav" className="border-t border-ink-200 bg-white lg:hidden">
+        <div id="mobile-nav" className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-ink-200 bg-white lg:hidden">
           <Container className="py-4">
             <nav aria-label="Main (mobile)" className="flex flex-col">
               {primaryNav.map((item) => (
@@ -97,7 +97,7 @@ export function Header() {
               <BookButton source="mobile-nav" className="w-full" />
               <ButtonLink
                 href="/assessment"
-                variant="secondary"
+                variant="accent"
                 className="w-full"
                 onClick={() => setOpen(false)}
               >

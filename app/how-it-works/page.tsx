@@ -26,7 +26,7 @@ export default function HowItWorksPage() {
       >
         <div className="flex flex-wrap gap-3">
           <BookButton source="how-it-works-header" size="lg" />
-          <ButtonLink href="/assessment" variant="secondary" size="lg">
+          <ButtonLink href="/assessment" variant="accent" size="lg">
             Start with the free assessment
           </ButtonLink>
         </div>

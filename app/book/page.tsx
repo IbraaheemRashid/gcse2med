@@ -91,7 +91,7 @@ export default function BookPage() {
                   where the gaps are.
                 </p>
                 <div className="mt-5">
-                  <ButtonLink href="/assessment" className="w-full">
+                  <ButtonLink variant="accent" href="/assessment" className="w-full">
                     Take the free assessment
                   </ButtonLink>
                 </div>

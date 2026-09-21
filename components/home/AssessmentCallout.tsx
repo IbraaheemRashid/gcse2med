@@ -48,7 +48,7 @@ export function AssessmentCallout() {
             </ul>
 
             <div className="mt-8">
-              <ButtonLink href="/assessment" size="lg">
+              <ButtonLink variant="accent" href="/assessment" size="lg">
                 Take the free assessment
               </ButtonLink>
             </div>

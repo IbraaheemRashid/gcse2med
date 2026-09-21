@@ -42,9 +42,8 @@ export default function TermsPage() {
 
       <LegalSection heading="Fees and payment">
         <p>
-          Fees are as published on our pricing page at the time of enrolment. Monthly
-          plans are billed monthly in advance and roll from month to month. Annual plans
-          are paid in advance and cover twelve months of lessons.
+          Fees and payment options are explained during your consultation and confirmed
+          before enrolment.
         </p>
         <p>
           Multi-subject prices apply from the month a subject is added. Tier changes take

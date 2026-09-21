@@ -202,7 +202,7 @@ export function ResultsPanel({
             </div>
 
             <div className="mt-6 text-center">
-              <ButtonLink href="/assessment" variant="ghost" size="sm">
+              <ButtonLink href="/assessment" variant="accent" size="sm">
                 Take another subject
               </ButtonLink>
             </div>

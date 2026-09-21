@@ -59,15 +59,15 @@ export default function ResourcesPage() {
           {/* TODO(client): swap this note for real downloadable samples once the
               slides, summary sheets and flashcard decks are exported. */}
           <p className="mt-8 rounded-card border border-dashed border-ink-300 bg-ink-50 px-6 py-5 text-[15px] leading-relaxed text-ink-600">
-            Sample slides and flashcard decks are being prepared for download. If you
-            would like to see a set before enrolling,{" "}
+            We are continuing to build our resources. Specification checklists and
+            flashcard decks will be added as they become available. For resource enquiries,{" "}
             <a
               href="/contact"
               className="font-semibold text-brand-700 underline underline-offset-4"
             >
               ask us
             </a>{" "}
-            and we will send one over.
+            about what is currently available.
           </p>
         </Container>
       </Section>
@@ -152,7 +152,7 @@ export default function ResourcesPage() {
 
           <div className="mt-12 flex flex-wrap justify-center gap-3">
             <BookButton source="resources-mistake-bank" variant="inverse" size="lg" />
-            <ButtonLink href="/assessment" variant="onDark" size="lg">
+            <ButtonLink href="/assessment" variant="accent" size="lg">
               Try the free assessment
             </ButtonLink>
           </div>

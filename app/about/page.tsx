@@ -93,7 +93,9 @@ export default function AboutPage() {
                       key={index}
                       className="mt-5 text-[17px] leading-relaxed text-ink-600"
                     >
-                      {paragraph}
+                      {paragraph.split(/(\*\*.*?\*\*)/g).map((part, i) =>
+                        part.startsWith("**") ? <strong key={i}>{part.slice(2, -2)}</strong> : part
+                      )}
                     </p>
                   ))}
 
@@ -214,16 +216,15 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <SectionHeading eyebrow="Safeguarding" title="Working with under-18s" />
+              <div id="safeguarding" className="scroll-mt-28"><SectionHeading eyebrow="Safeguarding" title="Working with under-18s" /></div>
               {/* TODO(client): confirm your actual safeguarding position — DBS checks,
                   designated safeguarding lead, recording policy, parent access to
                   lessons — before this goes live. Parents look for this. */}
               <p className="mt-5 text-[17px] leading-relaxed text-ink-600">
                 Most of our students are under eighteen, and we take that seriously.
-                Our safeguarding policy, DBS position and the rules around recorded
-                lessons and parent access are published in full here before enrolment
-                opens, and we are happy to talk through any of it on the consultation
-                call.
+                We are developing our safeguarding information. Please contact us to
+                discuss tutor checks, online lesson arrangements and how to raise a
+                concern before enrolling your child.
               </p>
 
               <div className="mt-8 rounded-card bg-brand-50 p-6">

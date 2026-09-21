@@ -5,7 +5,6 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Faqs, FaqJsonLd } from "@/components/ui/Faqs";
 import { ButtonLink } from "@/components/ui/Button";
 import { BookButton } from "@/components/site/BookButton";
-import { PricingExplorer } from "@/components/pricing/PricingExplorer";
 import { tiers, inheritsLabel } from "@/content/tiers";
 import { subjects, levels, hasAssessment } from "@/content/subjects";
 import { pricingFaqs } from "@/content/faqs";
@@ -13,7 +12,7 @@ import { pricingFaqs } from "@/content/faqs";
 export const metadata: Metadata = {
   title: "Subjects & pricing",
   description:
-    "GCSE and A-level Biology, Chemistry, Physics and Maths in groups of 8, 6 or 4. Essential from £59/month, Success from £99, Excellence from £179, with multi-subject and annual savings.",
+    "GCSE and A-level Biology, Chemistry, Physics and Maths. Tuition from £59 per month for one subject. Book a consultation to discuss your child’s needs and availability.",
   alternates: { canonical: "/subjects-pricing" },
 };
 
@@ -25,7 +24,7 @@ export default function SubjectsPricingPage() {
       <PageHeader
         eyebrow="Subjects & pricing"
         title="Pick the subjects. Pick how closely we track them."
-        lead="Four subjects, two levels, three tiers. The tier decides how small the group is and how much of your child's progress you actually get to see."
+        lead="Four subjects, two levels, personal support. Essential is open for enquiries; Success and Excellence are not currently accepting new students."
       />
 
       <Section className="bg-white">
@@ -88,12 +87,12 @@ export default function SubjectsPricingPage() {
       <Section id="pricing" className="bg-ink-50">
         <Container>
           <SectionHeading
-            eyebrow="Pricing"
-            title="Work out your price"
-            lead="Choose how many subjects and how you would like to pay. Multi-subject and annual savings are applied automatically."
+            eyebrow="Personal support"
+            title="Tuition from £59 per month for one subject"
+            lead="We keep places limited to maintain the quality of our support. Book a consultation to find out whether we can help right away. If all places are filled, students will need to join our waiting list."
           />
           <div className="mt-12">
-            <PricingExplorer />
+            <BookButton source="subjects-availability" size="lg" className="w-full sm:w-auto">Book a consultation</BookButton>
           </div>
         </Container>
       </Section>
@@ -135,13 +134,6 @@ export default function SubjectsPricingPage() {
                       </div>
                       <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
                         {tier.pitch}
-                      </p>
-                      <p className="mt-4 text-3xl font-extrabold tracking-tight">
-                        £{tier.monthlyFrom}
-                        <span className="text-base font-medium text-ink-500">
-                          {" "}
-                          /month, one subject
-                        </span>
                       </p>
                       <div className="mt-5 flex flex-wrap gap-2">
                         {tier.accepting ? (
@@ -220,7 +212,7 @@ export default function SubjectsPricingPage() {
             </p>
             <div className="flex shrink-0 flex-wrap gap-3">
               <BookButton source="pricing-footer" variant="inverse" />
-              <ButtonLink href="/assessment" variant="onBrand">
+              <ButtonLink href="/assessment" variant="accent">
                 Free assessment
               </ButtonLink>
             </div>

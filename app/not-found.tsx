@@ -19,7 +19,7 @@ export default function NotFound() {
           <ButtonLink href="/" size="lg">
             Back to the homepage
           </ButtonLink>
-          <ButtonLink href="/assessment" variant="secondary" size="lg">
+          <ButtonLink href="/assessment" variant="accent" size="lg">
             Free assessment
           </ButtonLink>
         </div>

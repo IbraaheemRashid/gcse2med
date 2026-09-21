@@ -15,7 +15,7 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-600">
-              {site.strapline}
+              {site.tagline}
             </p>
             <p className="mt-4 text-sm text-ink-600">
               <a href={`mailto:${site.email}`} className="hover:text-brand-700 hover:underline">

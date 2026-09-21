@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/Layout";
 import { ButtonLink } from "@/components/ui/Button";
 import { BookButton } from "@/components/site/BookButton";
 import { tierById } from "@/content/tiers";
-import { formatGBP, priceFor } from "@/content/pricing";
+import { site } from "@/content/site";
 
 export function Hero() {
   return (
@@ -13,8 +13,8 @@ export function Hero() {
         <div className="grid items-center gap-10 py-10 lg:grid-cols-[1.05fr_1fr] lg:gap-12">
           <div>
             <p className="text-sm font-semibold text-brand-700">GCSE &amp; A-level · Maths &amp; Sciences</p>
-            <h1 className="mt-5 text-[2.6rem] font-bold leading-[1.04] text-brand-950 sm:text-5xl lg:text-[3.3rem]">
-              Small-group tuition.<br /><span className="text-brand-600">A clear plan for your child.</span>
+            <h1 className="mt-5 text-[clamp(2rem,8vw,2.6rem)] font-bold leading-[1.04] text-brand-950 sm:text-5xl lg:text-[3.3rem]">
+              {site.tagline}
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-ink-600">Find the gaps. Build understanding. Walk into the next exam knowing what to do.</p>
             <ul className="mt-6 space-y-3 text-base text-brand-950">
@@ -22,9 +22,9 @@ export function Hero() {
                 <li key={item} className="flex items-start gap-3"><span aria-hidden="true" className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-sm text-brand-700">✓</span>{item}</li>
               ))}
             </ul>
-            <p className="mt-7 text-brand-950">Essential from <strong className="text-2xl">{formatGBP(priceFor("essential", 1, "monthly"))}</strong> /month per subject</p>
+            <p className="mt-7 text-brand-950">Tuition from <strong className="text-2xl">£59 per month</strong> for one subject.</p>
             <div className="mt-5 flex flex-col items-stretch gap-3 sm:items-start">
-              <ButtonLink href="/assessment" size="lg" className="w-full sm:max-w-sm">Take the free assessment <span aria-hidden="true">→</span></ButtonLink>
+              <ButtonLink variant="accent" href="/assessment" size="lg" className="w-full sm:max-w-sm">Take the free assessment <span aria-hidden="true">→</span></ButtonLink>
               <BookButton source="hero-refresh" variant="ghost" size="sm">Or book a free video consultation</BookButton>
             </div>
             <p className="mt-3 text-xs text-ink-500">No account needed for the assessment. No obligation to enrol.</p>

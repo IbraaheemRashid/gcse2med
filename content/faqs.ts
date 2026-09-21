@@ -9,7 +9,7 @@ export const pricingFaqs: Faq[] = [
   {
     question: "Can we change tier or subject later?",
     answer:
-      "Yes. Tiers can be changed from the start of the next monthly cycle, and subjects can be added at any point — the multi-subject price applies from the month the subject is added.",
+      "Please speak to us about changing subjects or support. Places are limited, and Success and Excellence are not currently accepting new students. We can discuss availability during your consultation.",
   },
   {
     question: "What happens in the free consultation?",
@@ -37,7 +37,7 @@ export const pricingFaqs: Faq[] = [
   {
     question: "Is there a contract or a minimum term?",
     answer:
-      "Monthly plans roll month to month. Annual plans are paid up front and carry the annual saving shown above.",
+      "We will explain the available payment options and any minimum term during your consultation, before you decide to enrol.",
   },
 ];
 
