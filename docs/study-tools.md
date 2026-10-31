@@ -36,21 +36,13 @@ were checked for successful loading.
 
 ## Email setup status — 31 October 2026
 
-The production project had only NEXT_PUBLIC_SITE_URL configured. Resend's
-mail.gcse2med.com domain was not verified and its three required DNS records
-were absent. The new records are prepared in GoDaddy but have not been saved:
-resend._domainkey.mail (TXT), rsend.mail (CNAME) and send.mail (CNAME).
-Existing Outlook MX/SPF records are unchanged.
+All three Resend DNS records are saved and mail.gcse2med.com is verified. A sending-only API key restricted to that domain is stored as a Vercel Production secret, alongside EMAIL_FROM and EMAIL_INTERNAL_TO. No credentials are stored in the repository. Delivery testing follows the deployment.
 
-The default EMAIL_FROM and .env.example now use
-`GCSE2MED <hello@mail.gcse2med.com>`; enquiries go to yahiya@gcse2med.com.
-User approved saving DNS, creating a domain-restricted sending
-key, storing it in Vercel and sending one test email. EMAIL_FROM and EMAIL_INTERNAL_TO are now saved in Vercel Production. GoDaddy requires an SMS identity check before it will save the DNS records; the user has been asked to complete it in Chrome. The sending key and delivery test remain pending that step. No credentials are stored in
-the repository. Delivery is not yet verified. Environment changes will need a
-later authorized deployment to take effect on the live site.
+## Tracker starting state
 
-User authorized deployment on 31 October 2026 and explicitly deferred the remaining email verification and delivery test.
+New trackers show one labelled example in the paper log. Examples are excluded from completed-paper totals, subject scores, graphs, revision topics and progress summaries. Existing saved examples are reduced to one without altering personal papers, review history or backups. Papers save automatically in localStorage under the existing key. Browser verification confirmed a real paper survives refresh and contributes to progress; the test paper was then removed. Six regression tests and the production build pass.
 
 The topic review panel shows five active topics by default, preserving due-first ordering. Expand reveals a bounded scrollable list; resting topics are collapsed together. Expansion resets when changing the subject or due filter. Browser-checked using 45 active and 20 resting example topics.
+
 
 

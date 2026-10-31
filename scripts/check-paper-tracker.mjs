@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { trackerSchema, reviewTopics, encodeBackup, decodeBackup, mergeBackup, dueDate, topicOptions } from '../lib/paper-tracker.ts';
+import { compactExamples, trackerSchema, reviewTopics, encodeBackup, decodeBackup, mergeBackup, dueDate, topicOptions } from '../lib/paper-tracker.ts';
 const paper={id:1,subj:'Biology',board:'AQA',series:'June 2026',paper:'Paper 1',tier:'Higher',date:'2026-10-01',score:40,total:70,topics:['Cells 🧬'],redo:0};
 test('legacy dates, examples and Unicode backup codes survive migration',async()=>{
   const examples=JSON.parse(await readFile(new URL('../content/paper-tracker-examples.json',import.meta.url),'utf8'));
@@ -38,4 +38,15 @@ test('invalid dates, impossible scores, duplicate IDs and corrupt backups are re
 test('combined science retains separate subject topic names',()=>{
   const names=topicOptions('Combined Science','AQA').flatMap(g=>g.options);
   for(const subject of ['Biology','Chemistry','Physics']) assert.ok(names.some(n=>n.startsWith(subject+': ')));
+});
+
+test('old demo papers are reduced without changing personal papers or review history',()=>{
+  const own={...paper,id:'personal',score:55};
+  const data={papers:[{...paper,ex:1},{...paper,id:2,ex:1},own],mastered:{x:{last:'2026-10-02',stage:2}},lastBackup:'2026-10-03'};
+  const result=compactExamples(data);
+  assert.deepEqual(result.papers,[data.papers[0],own]);
+  assert.deepEqual(result.mastered,data.mastered);
+  assert.equal(result.lastBackup,data.lastBackup);
+  assert.equal(data.papers.length,3);
+  assert.deepEqual(compactExamples({papers:[],mastered:{}}).papers,[]);
 });

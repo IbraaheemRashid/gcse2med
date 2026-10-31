@@ -93,3 +93,13 @@ export function mergeBackup(current: TrackerData, backup: TrackerData): TrackerD
   for (const [key, review] of Object.entries(backup.mastered)) if (!mastered[key] || review.last > mastered[key].last) mastered[key] = review;
   return trackerSchema.parse({papers, mastered, lastBackup: today()});
 }
+
+export function compactExamples(data: TrackerData): TrackerData {
+  let keptExample = false;
+  return {...data, papers: data.papers.filter(paper => {
+    if (!paper.ex) return true;
+    if (keptExample) return false;
+    keptExample = true;
+    return true;
+  })};
+}
