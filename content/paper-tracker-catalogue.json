@@ -1,0 +1,1660 @@
+{
+  "Maths": {
+    "_": [
+      {
+        "g": "Number",
+        "t": [
+          "Fractions ↔ decimals ↔ percentages",
+          "Percentage increase/decrease",
+          "Reverse percentages",
+          "Compound interest & depreciation",
+          "Standard form calculations",
+          "Simplifying surds",
+          "Rationalising the denominator",
+          "Laws of indices",
+          "Negative & fractional indices",
+          "Upper & lower bounds",
+          "Rounding (dp & sf) & estimation",
+          "HCF, LCM & product of primes"
+        ]
+      },
+      {
+        "g": "Algebra",
+        "t": [
+          "Expanding brackets",
+          "Factorising (common factor)",
+          "Factorising quadratics",
+          "Difference of two squares",
+          "Solving linear equations",
+          "Solving quadratics by factorising",
+          "Quadratic formula",
+          "Completing the square",
+          "Simultaneous equations (linear)",
+          "Simultaneous (one quadratic)",
+          "Simplifying algebraic fractions",
+          "Equations with algebraic fractions",
+          "Changing the subject",
+          "nth term (linear)",
+          "nth term (quadratic)",
+          "Function notation f(x), fg(x), f⁻¹(x)",
+          "Iteration",
+          "Solving inequalities",
+          "Inequalities on graphs",
+          "Straight-line graphs & gradient",
+          "Equation of a line",
+          "Parallel & perpendicular lines",
+          "Quadratic, cubic & reciprocal graphs",
+          "Graph transformations",
+          "Algebraic proof"
+        ]
+      },
+      {
+        "g": "Ratio & proportion",
+        "t": [
+          "Simplifying & sharing ratio",
+          "Combining ratios",
+          "Direct proportion",
+          "Inverse proportion",
+          "Best buys & exchange rates",
+          "Speed, distance, time",
+          "Density, mass, volume",
+          "Pressure, force, area",
+          "Growth & decay"
+        ]
+      },
+      {
+        "g": "Geometry & measures",
+        "t": [
+          "Angles in parallel lines",
+          "Angles in polygons",
+          "Interior & exterior angles",
+          "Circle theorems",
+          "Pythagoras' theorem",
+          "Trigonometry (SOHCAHTOA)",
+          "Exact trig values",
+          "Sine rule",
+          "Cosine rule",
+          "Area of a triangle (½ab sinC)",
+          "Area & perimeter (compound shapes)",
+          "Area of circles & sectors",
+          "Arc length",
+          "Volume of prisms & cylinders",
+          "Volume of cones, pyramids & spheres",
+          "Surface area",
+          "Vectors (notation & arithmetic)",
+          "Vector proofs",
+          "Translations",
+          "Rotations",
+          "Reflections",
+          "Enlargements (incl. negative SF)",
+          "Congruent triangles",
+          "Similar shapes (lengths)",
+          "Similar shapes (area & volume)",
+          "Bearings",
+          "Constructions",
+          "Loci"
+        ]
+      },
+      {
+        "g": "Probability",
+        "t": [
+          "Probability scale & basic probability",
+          "Sample space & listing outcomes",
+          "Relative frequency & expected outcomes",
+          "Tree diagrams (independent)",
+          "Tree diagrams (without replacement)",
+          "Venn diagrams & set notation"
+        ]
+      },
+      {
+        "g": "Statistics",
+        "t": [
+          "Mean, median, mode & range",
+          "Averages from frequency tables",
+          "Estimated mean (grouped data)",
+          "Cumulative frequency graphs",
+          "Box plots & comparing data",
+          "Histograms & frequency density",
+          "Scatter graphs & correlation",
+          "Lines of best fit",
+          "Sampling & bias",
+          "Pie charts"
+        ]
+      }
+    ]
+  },
+  "Biology": {
+    "AQA": [
+      {
+        "g": "Cell biology",
+        "t": [
+          "Animal & plant cell structures",
+          "Prokaryotic vs eukaryotic cells",
+          "Microscopy & magnification calculations",
+          "Diffusion",
+          "Osmosis (required practical)",
+          "Active transport",
+          "Mitosis & the cell cycle",
+          "Stem cells & differentiation"
+        ]
+      },
+      {
+        "g": "Organisation",
+        "t": [
+          "Enzymes (lock & key)",
+          "Factors affecting enzymes (required practical)",
+          "Digestive system & food tests",
+          "The heart & blood vessels",
+          "Blood components",
+          "Coronary heart disease",
+          "Risk factors for non-communicable disease",
+          "Cancer (benign vs malignant)",
+          "Plant tissues",
+          "Transpiration & stomata",
+          "Translocation"
+        ]
+      },
+      {
+        "g": "Infection & response",
+        "t": [
+          "Pathogens (bacteria/virus/fungi/protist)",
+          "Specific diseases (measles, HIV, TMV…)",
+          "Human defence systems",
+          "White blood cells & immunity",
+          "Vaccination",
+          "Antibiotics & painkillers",
+          "Drug development & trials",
+          "Monoclonal antibodies (triple)"
+        ]
+      },
+      {
+        "g": "Bioenergetics",
+        "t": [
+          "Photosynthesis equation & rate",
+          "Factors affecting photosynthesis",
+          "Required practical: light intensity",
+          "Uses of glucose in plants",
+          "Aerobic respiration",
+          "Anaerobic respiration & fermentation",
+          "Metabolism & oxygen debt"
+        ]
+      },
+      {
+        "g": "Homeostasis & response",
+        "t": [
+          "Principles of homeostasis",
+          "Nervous system & reflex arc",
+          "The brain (triple)",
+          "The eye (triple)",
+          "Controlling body temperature (triple)",
+          "Hormones & the endocrine system",
+          "Blood glucose control & diabetes",
+          "Hormones in reproduction",
+          "The menstrual cycle",
+          "Contraception",
+          "Treating infertility (triple)",
+          "Negative feedback: thyroxine/adrenaline (triple)",
+          "Kidneys & osmoregulation (triple)",
+          "Dialysis vs transplant (triple)",
+          "Plant hormones (triple)"
+        ]
+      },
+      {
+        "g": "Inheritance & evolution",
+        "t": [
+          "DNA, genes & the genome",
+          "Protein synthesis (triple)",
+          "Meiosis",
+          "Genetic inheritance & Punnett squares",
+          "Inherited disorders",
+          "Sex determination",
+          "Variation & mutation",
+          "Evolution by natural selection",
+          "Selective breeding",
+          "Genetic engineering",
+          "Cloning (triple)",
+          "Evidence for evolution & fossils",
+          "Extinction",
+          "Antibiotic-resistant bacteria",
+          "Classification"
+        ]
+      },
+      {
+        "g": "Ecology",
+        "t": [
+          "Ecosystems & levels of organisation",
+          "Abiotic & biotic factors",
+          "Adaptations",
+          "Predator–prey cycles",
+          "Required practical: quadrats & transects",
+          "The carbon cycle",
+          "The water cycle",
+          "Decomposition (triple)",
+          "Biodiversity & human impact",
+          "Pollution",
+          "Global warming",
+          "Deforestation & land use",
+          "Maintaining biodiversity",
+          "Trophic levels & food security (triple)"
+        ]
+      }
+    ],
+    "Edexcel": [
+      {
+        "g": "T1 Key concepts in biology",
+        "t": [
+          "Animal & plant cell structures",
+          "Specialised cells",
+          "Microscopy & magnification",
+          "Enzymes & active sites",
+          "Factors affecting enzymes (core practical)",
+          "Diffusion, osmosis & active transport"
+        ]
+      },
+      {
+        "g": "T2 Cells and control",
+        "t": [
+          "Mitosis & the cell cycle",
+          "Cancer",
+          "Growth in plants & animals",
+          "Stem cells & differentiation",
+          "The nervous system & reflex arc",
+          "The brain & CNS (triple)",
+          "The eye (triple)"
+        ]
+      },
+      {
+        "g": "T3 Genetics",
+        "t": [
+          "Sexual & asexual reproduction",
+          "Meiosis",
+          "DNA structure & the genome",
+          "Protein synthesis (triple)",
+          "Genetic inheritance & Punnett squares",
+          "Inherited disorders",
+          "Variation & mutation"
+        ]
+      },
+      {
+        "g": "T4 Natural selection & genetic modification",
+        "t": [
+          "Evolution by natural selection",
+          "Evidence for evolution & fossils",
+          "Classification",
+          "Selective breeding",
+          "Genetic engineering",
+          "Tissue culture & cloning (triple)"
+        ]
+      },
+      {
+        "g": "T5 Health, disease & medicines",
+        "t": [
+          "Health & disease",
+          "Communicable diseases & pathogens",
+          "STIs & HIV",
+          "Physical & chemical plant defences (triple)",
+          "The immune system",
+          "Vaccination & antibiotics",
+          "Drug development & trials",
+          "Monoclonal antibodies (triple)",
+          "Non-communicable disease & risk factors"
+        ]
+      },
+      {
+        "g": "T6 Plant structures & functions",
+        "t": [
+          "Photosynthesis",
+          "Factors affecting photosynthesis",
+          "Transpiration & stomata",
+          "Translocation",
+          "Plant hormones & adaptations (triple)"
+        ]
+      },
+      {
+        "g": "T7 Animal coordination & homeostasis",
+        "t": [
+          "Hormones & the endocrine system",
+          "Blood glucose control & diabetes",
+          "The menstrual cycle",
+          "Hormonal & barrier contraception",
+          "Treating infertility (triple)",
+          "Thermoregulation (triple)",
+          "Kidneys & osmoregulation (triple)",
+          "ADH & negative feedback (triple)"
+        ]
+      },
+      {
+        "g": "T8 Exchange & transport in animals",
+        "t": [
+          "Surface area : volume ratio",
+          "Diffusion & gas exchange",
+          "The respiratory system",
+          "The circulatory system",
+          "The heart & blood vessels",
+          "Blood components"
+        ]
+      },
+      {
+        "g": "T9 Ecosystems & material cycles",
+        "t": [
+          "Ecosystems & interdependence",
+          "Abiotic & biotic factors",
+          "Quadrats & transects (core practical)",
+          "Food chains & biomass",
+          "The water cycle",
+          "The carbon cycle",
+          "The nitrogen cycle",
+          "Biodiversity & human impact",
+          "Preserving biodiversity"
+        ]
+      }
+    ],
+    "OCR": [
+      {
+        "g": "B1 Cell level systems",
+        "t": [
+          "Animal & plant cell structures",
+          "Bacterial cells",
+          "Microscopy & magnification",
+          "DNA & the genome",
+          "Enzymes & factors affecting them",
+          "Aerobic & anaerobic respiration",
+          "Photosynthesis & rate"
+        ]
+      },
+      {
+        "g": "B2 Scaling up",
+        "t": [
+          "Diffusion, osmosis & active transport",
+          "Mitosis & the cell cycle",
+          "Stem cells",
+          "The cardiovascular system & heart",
+          "Blood & blood vessels",
+          "Transport & transpiration in plants"
+        ]
+      },
+      {
+        "g": "B3 Organism level systems",
+        "t": [
+          "The nervous system & reflexes",
+          "The brain & the eye (triple)",
+          "Hormones & the endocrine system",
+          "Blood glucose control & diabetes",
+          "The menstrual cycle & hormones",
+          "Contraception",
+          "Plant hormones (triple)",
+          "Homeostasis & thermoregulation",
+          "Kidneys & osmoregulation (triple)"
+        ]
+      },
+      {
+        "g": "B4 Community level systems",
+        "t": [
+          "Ecosystems & interdependence",
+          "Sampling: quadrats & transects",
+          "The carbon cycle",
+          "The nitrogen cycle",
+          "The water cycle",
+          "Decomposition"
+        ]
+      },
+      {
+        "g": "B5 Genes, inheritance & selection",
+        "t": [
+          "Meiosis & sexual reproduction",
+          "Genetic inheritance & Punnett squares",
+          "Variation & mutation",
+          "Evolution by natural selection",
+          "Evidence for evolution",
+          "Selective breeding",
+          "Genetic engineering (triple)"
+        ]
+      },
+      {
+        "g": "B6 Global challenges",
+        "t": [
+          "Monitoring & maintaining biodiversity",
+          "Food security & farming",
+          "Communicable diseases & pathogens",
+          "Plant & human defences",
+          "The immune system & vaccination",
+          "Antibiotics & drug development",
+          "Monoclonal antibodies (triple)",
+          "Non-communicable diseases"
+        ]
+      }
+    ],
+    "_": [
+      {
+        "g": "Cell biology",
+        "t": [
+          "Animal & plant cell structures",
+          "Prokaryotic vs eukaryotic cells",
+          "Microscopy & magnification calculations",
+          "Diffusion",
+          "Osmosis (required practical)",
+          "Active transport",
+          "Mitosis & the cell cycle",
+          "Stem cells & differentiation"
+        ]
+      },
+      {
+        "g": "Organisation",
+        "t": [
+          "Enzymes (lock & key)",
+          "Factors affecting enzymes (required practical)",
+          "Digestive system & food tests",
+          "The heart & blood vessels",
+          "Blood components",
+          "Coronary heart disease",
+          "Risk factors for non-communicable disease",
+          "Cancer (benign vs malignant)",
+          "Plant tissues",
+          "Transpiration & stomata",
+          "Translocation"
+        ]
+      },
+      {
+        "g": "Infection & response",
+        "t": [
+          "Pathogens (bacteria/virus/fungi/protist)",
+          "Specific diseases (measles, HIV, TMV…)",
+          "Human defence systems",
+          "White blood cells & immunity",
+          "Vaccination",
+          "Antibiotics & painkillers",
+          "Drug development & trials",
+          "Monoclonal antibodies (triple)"
+        ]
+      },
+      {
+        "g": "Bioenergetics",
+        "t": [
+          "Photosynthesis equation & rate",
+          "Factors affecting photosynthesis",
+          "Required practical: light intensity",
+          "Uses of glucose in plants",
+          "Aerobic respiration",
+          "Anaerobic respiration & fermentation",
+          "Metabolism & oxygen debt"
+        ]
+      },
+      {
+        "g": "Homeostasis & response",
+        "t": [
+          "Principles of homeostasis",
+          "Nervous system & reflex arc",
+          "The brain (triple)",
+          "The eye (triple)",
+          "Controlling body temperature (triple)",
+          "Hormones & the endocrine system",
+          "Blood glucose control & diabetes",
+          "Hormones in reproduction",
+          "The menstrual cycle",
+          "Contraception",
+          "Treating infertility (triple)",
+          "Negative feedback: thyroxine/adrenaline (triple)",
+          "Kidneys & osmoregulation (triple)",
+          "Dialysis vs transplant (triple)",
+          "Plant hormones (triple)"
+        ]
+      },
+      {
+        "g": "Inheritance & evolution",
+        "t": [
+          "DNA, genes & the genome",
+          "Protein synthesis (triple)",
+          "Meiosis",
+          "Genetic inheritance & Punnett squares",
+          "Inherited disorders",
+          "Sex determination",
+          "Variation & mutation",
+          "Evolution by natural selection",
+          "Selective breeding",
+          "Genetic engineering",
+          "Cloning (triple)",
+          "Evidence for evolution & fossils",
+          "Extinction",
+          "Antibiotic-resistant bacteria",
+          "Classification"
+        ]
+      },
+      {
+        "g": "Ecology",
+        "t": [
+          "Ecosystems & levels of organisation",
+          "Abiotic & biotic factors",
+          "Adaptations",
+          "Predator–prey cycles",
+          "Required practical: quadrats & transects",
+          "The carbon cycle",
+          "The water cycle",
+          "Decomposition (triple)",
+          "Biodiversity & human impact",
+          "Pollution",
+          "Global warming",
+          "Deforestation & land use",
+          "Maintaining biodiversity",
+          "Trophic levels & food security (triple)"
+        ]
+      }
+    ]
+  },
+  "Chemistry": {
+    "AQA": [
+      {
+        "g": "Atomic structure & periodic table",
+        "t": [
+          "Atoms, elements & compounds",
+          "Mixtures & separation techniques",
+          "Chromatography & Rf values",
+          "History of the atom",
+          "Subatomic particles & mass number",
+          "Electronic structure",
+          "Development of the periodic table",
+          "Group 1 (alkali metals)",
+          "Group 7 (halogens)",
+          "Group 0 (noble gases)",
+          "Transition metals (triple)"
+        ]
+      },
+      {
+        "g": "Bonding & structure",
+        "t": [
+          "Ionic bonding & dot-and-cross",
+          "Properties of ionic compounds",
+          "Covalent bonding",
+          "Simple molecular substances",
+          "Giant covalent (diamond/graphite/graphene)",
+          "Polymers (structure)",
+          "Metallic bonding",
+          "Alloys",
+          "States of matter & changes",
+          "Nanoparticles & uses"
+        ]
+      },
+      {
+        "g": "Quantitative chemistry",
+        "t": [
+          "Relative formula mass",
+          "Conservation of mass & balancing",
+          "The mole",
+          "Reacting mass calculations",
+          "Concentration of solutions",
+          "Percentage yield",
+          "Atom economy",
+          "Moles & gas volumes (triple)",
+          "Titration calculations (triple)"
+        ]
+      },
+      {
+        "g": "Chemical changes",
+        "t": [
+          "Acids, bases & the pH scale",
+          "Neutralisation & salts",
+          "Making soluble salts (required practical)",
+          "Strong vs weak acids",
+          "Reactivity series",
+          "Displacement reactions",
+          "Extraction of metals (reduction)",
+          "Electrolysis of molten compounds",
+          "Electrolysis of solutions",
+          "Required practical: electrolysis"
+        ]
+      },
+      {
+        "g": "Energy changes",
+        "t": [
+          "Exothermic & endothermic reactions",
+          "Reaction profiles",
+          "Bond energy calculations",
+          "Cells, batteries & fuel cells (triple)"
+        ]
+      },
+      {
+        "g": "Rates & equilibrium",
+        "t": [
+          "Measuring rate of reaction",
+          "Factors affecting rate",
+          "Required practical: rates",
+          "Collision theory & activation energy",
+          "Catalysts",
+          "Reversible reactions & equilibrium",
+          "Le Chatelier's principle (triple)"
+        ]
+      },
+      {
+        "g": "Organic chemistry",
+        "t": [
+          "Crude oil & fractional distillation",
+          "Alkanes",
+          "Alkenes & addition reactions",
+          "Combustion of fuels",
+          "Cracking",
+          "Alcohols (triple)",
+          "Carboxylic acids (triple)",
+          "Addition vs condensation polymers (triple)"
+        ]
+      },
+      {
+        "g": "Chemical analysis",
+        "t": [
+          "Pure substances & formulations",
+          "Flame tests (triple)",
+          "Tests for cations & anions (triple)",
+          "Tests for gases",
+          "Instrumental methods (triple)"
+        ]
+      },
+      {
+        "g": "Atmosphere & resources",
+        "t": [
+          "Evolution of the atmosphere",
+          "Greenhouse gases & climate change",
+          "Carbon footprint",
+          "Atmospheric pollutants",
+          "Potable water",
+          "Waste water treatment",
+          "Life cycle assessments & recycling",
+          "The Haber process (triple)",
+          "NPK fertilisers (triple)"
+        ]
+      }
+    ],
+    "Edexcel": [
+      {
+        "g": "T1 Key concepts in chemistry",
+        "t": [
+          "Atoms, elements & compounds",
+          "Atomic structure & isotopes",
+          "Periodic table & electronic configuration",
+          "Ionic bonding",
+          "Covalent bonding",
+          "Metallic bonding",
+          "Properties of substances"
+        ]
+      },
+      {
+        "g": "T2 States of matter & mixtures",
+        "t": [
+          "States of matter & changes of state",
+          "Pure substances & mixtures",
+          "Filtration, crystallisation & distillation",
+          "Chromatography & Rf",
+          "Drinking water"
+        ]
+      },
+      {
+        "g": "T3 Chemical changes",
+        "t": [
+          "Acids, alkalis & pH",
+          "Neutralisation & salts",
+          "Making soluble salts (core practical)",
+          "Electrolysis of molten compounds",
+          "Electrolysis of solutions"
+        ]
+      },
+      {
+        "g": "T4 Extracting metals & equilibria",
+        "t": [
+          "Reactivity series",
+          "Oxidation & reduction",
+          "Extraction of metals",
+          "Reversible reactions & equilibrium (Higher)"
+        ]
+      },
+      {
+        "g": "T5 Separate chemistry 1",
+        "t": [
+          "Transition metals & properties",
+          "Alloys & corrosion",
+          "The mole & reacting masses",
+          "Concentration & titration",
+          "Percentage yield & atom economy",
+          "Molar gas volume"
+        ]
+      },
+      {
+        "g": "T6 Groups in the periodic table",
+        "t": [
+          "Group 1 alkali metals",
+          "Group 7 halogens",
+          "Halogen displacement",
+          "Group 0 noble gases"
+        ]
+      },
+      {
+        "g": "T7 Rates of reaction & energy changes",
+        "t": [
+          "Rate of reaction & factors",
+          "Collision theory & catalysts",
+          "Core practical: rates",
+          "Exothermic & endothermic reactions",
+          "Reaction profiles",
+          "Bond energy calculations"
+        ]
+      },
+      {
+        "g": "T8 Fuels & Earth science",
+        "t": [
+          "Crude oil & fractional distillation",
+          "Alkanes & combustion",
+          "Cracking",
+          "Pollutants & incomplete combustion",
+          "The early atmosphere",
+          "Greenhouse gases & climate change"
+        ]
+      },
+      {
+        "g": "T9 Separate chemistry 2",
+        "t": [
+          "Tests for cations & anions",
+          "Flame tests",
+          "Tests for gases",
+          "Instrumental methods",
+          "Alkenes & addition reactions",
+          "Alcohols & carboxylic acids",
+          "Addition & condensation polymers",
+          "Nanoparticles & bulk materials"
+        ]
+      }
+    ],
+    "OCR": [
+      {
+        "g": "C1 Particles",
+        "t": [
+          "The particle model",
+          "States of matter & changes of state",
+          "Atomic structure & isotopes",
+          "Development of the atomic model"
+        ]
+      },
+      {
+        "g": "C2 Elements, compounds & mixtures",
+        "t": [
+          "Purity & separating mixtures",
+          "Chromatography & Rf",
+          "Ionic bonding",
+          "Covalent bonding",
+          "Metallic bonding",
+          "Structure & properties",
+          "Nanoparticles (triple)",
+          "Periodic table & electronic structure"
+        ]
+      },
+      {
+        "g": "C3 Chemical reactions",
+        "t": [
+          "Conservation of mass & equations",
+          "The mole & reacting masses",
+          "Acids, bases & neutralisation",
+          "Making salts",
+          "Electrolysis",
+          "Exothermic & endothermic reactions",
+          "Reaction profiles & bond energies",
+          "Redox reactions"
+        ]
+      },
+      {
+        "g": "C4 Predicting & identifying reactions",
+        "t": [
+          "Group 1, 7 & 0 trends",
+          "Reactivity series",
+          "Displacement reactions",
+          "Tests for cations & anions",
+          "Flame tests",
+          "Tests for gases",
+          "Instrumental methods (triple)"
+        ]
+      },
+      {
+        "g": "C5 Monitoring & controlling reactions",
+        "t": [
+          "Rates of reaction & factors",
+          "Collision theory & catalysts",
+          "Concentration & titration",
+          "Percentage yield & atom economy",
+          "Reversible reactions & equilibrium",
+          "Le Chatelier (triple)"
+        ]
+      },
+      {
+        "g": "C6 Global challenges",
+        "t": [
+          "Extraction of metals & reduction",
+          "Alloys & corrosion",
+          "The Haber process (triple)",
+          "Fertilisers (triple)",
+          "Crude oil & fractional distillation",
+          "Alkanes & alkenes",
+          "Cracking",
+          "Polymers",
+          "Alcohols & carboxylic acids (triple)",
+          "The atmosphere & greenhouse gases",
+          "Pollutants",
+          "Potable water"
+        ]
+      }
+    ],
+    "_": [
+      {
+        "g": "Atomic structure & periodic table",
+        "t": [
+          "Atoms, elements & compounds",
+          "Mixtures & separation techniques",
+          "Chromatography & Rf values",
+          "History of the atom",
+          "Subatomic particles & mass number",
+          "Electronic structure",
+          "Development of the periodic table",
+          "Group 1 (alkali metals)",
+          "Group 7 (halogens)",
+          "Group 0 (noble gases)",
+          "Transition metals (triple)"
+        ]
+      },
+      {
+        "g": "Bonding & structure",
+        "t": [
+          "Ionic bonding & dot-and-cross",
+          "Properties of ionic compounds",
+          "Covalent bonding",
+          "Simple molecular substances",
+          "Giant covalent (diamond/graphite/graphene)",
+          "Polymers (structure)",
+          "Metallic bonding",
+          "Alloys",
+          "States of matter & changes",
+          "Nanoparticles & uses"
+        ]
+      },
+      {
+        "g": "Quantitative chemistry",
+        "t": [
+          "Relative formula mass",
+          "Conservation of mass & balancing",
+          "The mole",
+          "Reacting mass calculations",
+          "Concentration of solutions",
+          "Percentage yield",
+          "Atom economy",
+          "Moles & gas volumes (triple)",
+          "Titration calculations (triple)"
+        ]
+      },
+      {
+        "g": "Chemical changes",
+        "t": [
+          "Acids, bases & the pH scale",
+          "Neutralisation & salts",
+          "Making soluble salts (required practical)",
+          "Strong vs weak acids",
+          "Reactivity series",
+          "Displacement reactions",
+          "Extraction of metals (reduction)",
+          "Electrolysis of molten compounds",
+          "Electrolysis of solutions",
+          "Required practical: electrolysis"
+        ]
+      },
+      {
+        "g": "Energy changes",
+        "t": [
+          "Exothermic & endothermic reactions",
+          "Reaction profiles",
+          "Bond energy calculations",
+          "Cells, batteries & fuel cells (triple)"
+        ]
+      },
+      {
+        "g": "Rates & equilibrium",
+        "t": [
+          "Measuring rate of reaction",
+          "Factors affecting rate",
+          "Required practical: rates",
+          "Collision theory & activation energy",
+          "Catalysts",
+          "Reversible reactions & equilibrium",
+          "Le Chatelier's principle (triple)"
+        ]
+      },
+      {
+        "g": "Organic chemistry",
+        "t": [
+          "Crude oil & fractional distillation",
+          "Alkanes",
+          "Alkenes & addition reactions",
+          "Combustion of fuels",
+          "Cracking",
+          "Alcohols (triple)",
+          "Carboxylic acids (triple)",
+          "Addition vs condensation polymers (triple)"
+        ]
+      },
+      {
+        "g": "Chemical analysis",
+        "t": [
+          "Pure substances & formulations",
+          "Flame tests (triple)",
+          "Tests for cations & anions (triple)",
+          "Tests for gases",
+          "Instrumental methods (triple)"
+        ]
+      },
+      {
+        "g": "Atmosphere & resources",
+        "t": [
+          "Evolution of the atmosphere",
+          "Greenhouse gases & climate change",
+          "Carbon footprint",
+          "Atmospheric pollutants",
+          "Potable water",
+          "Waste water treatment",
+          "Life cycle assessments & recycling",
+          "The Haber process (triple)",
+          "NPK fertilisers (triple)"
+        ]
+      }
+    ]
+  },
+  "Physics": {
+    "AQA": [
+      {
+        "g": "Energy",
+        "t": [
+          "Energy stores & transfers",
+          "Kinetic energy",
+          "Gravitational PE",
+          "Elastic PE",
+          "Specific heat capacity (required practical)",
+          "Power",
+          "Efficiency",
+          "Reducing energy transfers/insulation",
+          "Energy resources (renewable/non-renewable)"
+        ]
+      },
+      {
+        "g": "Electricity",
+        "t": [
+          "Circuit symbols & diagrams",
+          "Charge, current & time",
+          "Potential difference & resistance",
+          "I–V characteristics (required practical)",
+          "Resistance of a wire (required practical)",
+          "Series circuits",
+          "Parallel circuits",
+          "LDRs & thermistors",
+          "Mains electricity (ac/dc)",
+          "Plugs & wiring",
+          "Electrical power & energy",
+          "The National Grid",
+          "Static electricity (triple)",
+          "Electric fields (triple)"
+        ]
+      },
+      {
+        "g": "Particle model of matter",
+        "t": [
+          "Density (required practical)",
+          "States & internal energy",
+          "Specific latent heat",
+          "Particle motion & gas pressure",
+          "Pressure & volume (triple)"
+        ]
+      },
+      {
+        "g": "Atomic structure",
+        "t": [
+          "Structure of the atom",
+          "Development of the atomic model",
+          "Isotopes",
+          "Types of nuclear radiation",
+          "Nuclear equations",
+          "Half-life",
+          "Contamination vs irradiation",
+          "Uses & dangers of radiation",
+          "Nuclear fission (triple)",
+          "Nuclear fusion (triple)"
+        ]
+      },
+      {
+        "g": "Forces",
+        "t": [
+          "Scalars & vectors",
+          "Contact & non-contact forces",
+          "Weight & gravity",
+          "Resultant forces & free-body diagrams",
+          "Resolving forces (triple)",
+          "Work done & power",
+          "Forces & elasticity / Hooke's law (required practical)",
+          "Moments, levers & gears",
+          "Pressure in fluids (triple)",
+          "Pressure & depth (triple)"
+        ]
+      },
+      {
+        "g": "Motion",
+        "t": [
+          "Distance & displacement",
+          "Speed & velocity",
+          "Distance–time graphs",
+          "Acceleration",
+          "Velocity–time graphs",
+          "Newton's first law",
+          "Newton's second law (required practical)",
+          "Newton's third law",
+          "Stopping distance",
+          "Reaction time & braking",
+          "Momentum (triple)",
+          "Conservation of momentum (triple)"
+        ]
+      },
+      {
+        "g": "Waves",
+        "t": [
+          "Transverse & longitudinal waves",
+          "Wave speed, frequency & wavelength",
+          "Measuring waves (required practical)",
+          "Reflection & refraction",
+          "Sound waves (triple)",
+          "Ultrasound & echo sounding (triple)",
+          "The EM spectrum",
+          "Properties & uses of EM waves",
+          "Dangers of EM radiation",
+          "Lenses & ray diagrams (triple)",
+          "Visible light & colour (triple)",
+          "Black body radiation (triple)"
+        ]
+      },
+      {
+        "g": "Magnetism & electromagnetism",
+        "t": [
+          "Magnets & magnetic fields",
+          "Electromagnets",
+          "The motor effect (Fleming's LH rule)",
+          "Motor effect calculations",
+          "Electric motors (triple)",
+          "Generator / dynamo effect (triple)",
+          "Transformers (triple)",
+          "Loudspeakers & microphones (triple)"
+        ]
+      },
+      {
+        "g": "Space physics (triple)",
+        "t": [
+          "The solar system & orbits",
+          "Life cycle of stars",
+          "Red-shift & the Big Bang",
+          "Orbital speed & satellites"
+        ]
+      }
+    ],
+    "Edexcel": [
+      {
+        "g": "T1 Key concepts of physics",
+        "t": [
+          "SI units & prefixes",
+          "Standard form & estimation"
+        ]
+      },
+      {
+        "g": "T2 Motion and forces",
+        "t": [
+          "Scalars & vectors",
+          "Speed, velocity & acceleration",
+          "Distance–time & velocity–time graphs",
+          "Newton's laws",
+          "Resultant forces",
+          "Stopping distances",
+          "Momentum & conservation (Higher)"
+        ]
+      },
+      {
+        "g": "T3 Conservation of energy",
+        "t": [
+          "Energy stores & transfers",
+          "Efficiency & power",
+          "Energy resources"
+        ]
+      },
+      {
+        "g": "T4 Waves",
+        "t": [
+          "Transverse & longitudinal waves",
+          "Wave speed, frequency & wavelength",
+          "Core practical: waves",
+          "Sound & ultrasound (triple)"
+        ]
+      },
+      {
+        "g": "T5 Light & the EM spectrum",
+        "t": [
+          "Reflection & refraction",
+          "The EM spectrum",
+          "Uses & dangers of EM waves",
+          "Colour & lenses (triple)"
+        ]
+      },
+      {
+        "g": "T6 Radioactivity",
+        "t": [
+          "Atomic structure & isotopes",
+          "Models of the atom",
+          "Types of radiation",
+          "Nuclear equations",
+          "Half-life",
+          "Uses & dangers of radiation",
+          "Fission & fusion (triple)"
+        ]
+      },
+      {
+        "g": "T7 Astronomy (triple)",
+        "t": [
+          "The solar system & orbits",
+          "Life cycle of stars",
+          "Red-shift & the expanding universe"
+        ]
+      },
+      {
+        "g": "T8 Energy – forces doing work",
+        "t": [
+          "Work done & energy transfer",
+          "Power"
+        ]
+      },
+      {
+        "g": "T9 Forces & their effects",
+        "t": [
+          "Moments, levers & gears",
+          "Pressure in fluids (Higher)",
+          "Upthrust & floating (triple)"
+        ]
+      },
+      {
+        "g": "T10 Electricity & circuits",
+        "t": [
+          "Current, charge & time",
+          "Potential difference & resistance",
+          "Core practical: resistance",
+          "Series & parallel circuits",
+          "I–V characteristics",
+          "Domestic electricity & power",
+          "The National Grid"
+        ]
+      },
+      {
+        "g": "T11 Static electricity",
+        "t": [
+          "Static charge & electric fields",
+          "Uses & dangers of static"
+        ]
+      },
+      {
+        "g": "T12 Magnetism & the motor effect",
+        "t": [
+          "Magnets & magnetic fields",
+          "Electromagnets",
+          "The motor effect & Fleming's LH rule"
+        ]
+      },
+      {
+        "g": "T13 Electromagnetic induction (triple)",
+        "t": [
+          "The generator effect",
+          "Transformers",
+          "Microphones & loudspeakers"
+        ]
+      },
+      {
+        "g": "T14 Particle model",
+        "t": [
+          "Density (core practical)",
+          "States & internal energy",
+          "Specific heat capacity",
+          "Specific latent heat",
+          "Gas pressure & temperature (Higher)"
+        ]
+      },
+      {
+        "g": "T15 Forces & matter",
+        "t": [
+          "Hooke's law & spring constant (core practical)",
+          "Elastic & inelastic deformation"
+        ]
+      }
+    ],
+    "OCR": [
+      {
+        "g": "P1 Matter",
+        "t": [
+          "Particle model & density",
+          "States of matter & changes of state",
+          "Specific heat capacity",
+          "Specific latent heat",
+          "Pressure in gases & fluids (Higher)"
+        ]
+      },
+      {
+        "g": "P2 Forces",
+        "t": [
+          "Scalars & vectors",
+          "Speed, velocity & acceleration",
+          "Distance–time & velocity–time graphs",
+          "Newton's laws",
+          "Stopping distances",
+          "Momentum (Higher)",
+          "Hooke's law & springs",
+          "Moments, levers & gears",
+          "Work done & power"
+        ]
+      },
+      {
+        "g": "P3 Electricity",
+        "t": [
+          "Charge & current",
+          "Potential difference & resistance",
+          "Series & parallel circuits",
+          "I–V characteristics",
+          "Domestic electricity & power",
+          "The National Grid",
+          "Static electricity"
+        ]
+      },
+      {
+        "g": "P4 Magnetism & magnetic fields",
+        "t": [
+          "Magnets & magnetic fields",
+          "Electromagnets",
+          "The motor effect (Fleming's LH rule)",
+          "Induced potential & transformers (triple)"
+        ]
+      },
+      {
+        "g": "P5 Waves in matter",
+        "t": [
+          "Transverse & longitudinal waves",
+          "Wave speed, frequency & wavelength",
+          "Reflection & refraction",
+          "Sound & ultrasound (triple)",
+          "The EM spectrum",
+          "Uses & dangers of EM waves",
+          "Lenses (triple)"
+        ]
+      },
+      {
+        "g": "P6 Radioactivity",
+        "t": [
+          "Atomic structure & isotopes",
+          "Development of the atomic model",
+          "Types of nuclear radiation",
+          "Nuclear equations",
+          "Half-life",
+          "Uses & dangers of radiation",
+          "Fission & fusion (triple)"
+        ]
+      },
+      {
+        "g": "P7 Energy",
+        "t": [
+          "Energy stores & transfers",
+          "Conservation of energy",
+          "Efficiency & power",
+          "Energy resources",
+          "Kinetic & potential energy"
+        ]
+      },
+      {
+        "g": "P8 Global challenges",
+        "t": [
+          "Using energy resources",
+          "Powering Earth & the National Grid",
+          "The solar system & orbits (triple)",
+          "Life cycle of stars (triple)",
+          "Red-shift & the Big Bang (triple)"
+        ]
+      }
+    ],
+    "_": [
+      {
+        "g": "Energy",
+        "t": [
+          "Energy stores & transfers",
+          "Kinetic energy",
+          "Gravitational PE",
+          "Elastic PE",
+          "Specific heat capacity (required practical)",
+          "Power",
+          "Efficiency",
+          "Reducing energy transfers/insulation",
+          "Energy resources (renewable/non-renewable)"
+        ]
+      },
+      {
+        "g": "Electricity",
+        "t": [
+          "Circuit symbols & diagrams",
+          "Charge, current & time",
+          "Potential difference & resistance",
+          "I–V characteristics (required practical)",
+          "Resistance of a wire (required practical)",
+          "Series circuits",
+          "Parallel circuits",
+          "LDRs & thermistors",
+          "Mains electricity (ac/dc)",
+          "Plugs & wiring",
+          "Electrical power & energy",
+          "The National Grid",
+          "Static electricity (triple)",
+          "Electric fields (triple)"
+        ]
+      },
+      {
+        "g": "Particle model of matter",
+        "t": [
+          "Density (required practical)",
+          "States & internal energy",
+          "Specific latent heat",
+          "Particle motion & gas pressure",
+          "Pressure & volume (triple)"
+        ]
+      },
+      {
+        "g": "Atomic structure",
+        "t": [
+          "Structure of the atom",
+          "Development of the atomic model",
+          "Isotopes",
+          "Types of nuclear radiation",
+          "Nuclear equations",
+          "Half-life",
+          "Contamination vs irradiation",
+          "Uses & dangers of radiation",
+          "Nuclear fission (triple)",
+          "Nuclear fusion (triple)"
+        ]
+      },
+      {
+        "g": "Forces",
+        "t": [
+          "Scalars & vectors",
+          "Contact & non-contact forces",
+          "Weight & gravity",
+          "Resultant forces & free-body diagrams",
+          "Resolving forces (triple)",
+          "Work done & power",
+          "Forces & elasticity / Hooke's law (required practical)",
+          "Moments, levers & gears",
+          "Pressure in fluids (triple)",
+          "Pressure & depth (triple)"
+        ]
+      },
+      {
+        "g": "Motion",
+        "t": [
+          "Distance & displacement",
+          "Speed & velocity",
+          "Distance–time graphs",
+          "Acceleration",
+          "Velocity–time graphs",
+          "Newton's first law",
+          "Newton's second law (required practical)",
+          "Newton's third law",
+          "Stopping distance",
+          "Reaction time & braking",
+          "Momentum (triple)",
+          "Conservation of momentum (triple)"
+        ]
+      },
+      {
+        "g": "Waves",
+        "t": [
+          "Transverse & longitudinal waves",
+          "Wave speed, frequency & wavelength",
+          "Measuring waves (required practical)",
+          "Reflection & refraction",
+          "Sound waves (triple)",
+          "Ultrasound & echo sounding (triple)",
+          "The EM spectrum",
+          "Properties & uses of EM waves",
+          "Dangers of EM radiation",
+          "Lenses & ray diagrams (triple)",
+          "Visible light & colour (triple)",
+          "Black body radiation (triple)"
+        ]
+      },
+      {
+        "g": "Magnetism & electromagnetism",
+        "t": [
+          "Magnets & magnetic fields",
+          "Electromagnets",
+          "The motor effect (Fleming's LH rule)",
+          "Motor effect calculations",
+          "Electric motors (triple)",
+          "Generator / dynamo effect (triple)",
+          "Transformers (triple)",
+          "Loudspeakers & microphones (triple)"
+        ]
+      },
+      {
+        "g": "Space physics (triple)",
+        "t": [
+          "The solar system & orbits",
+          "Life cycle of stars",
+          "Red-shift & the Big Bang",
+          "Orbital speed & satellites"
+        ]
+      }
+    ]
+  },
+  "English Language": {
+    "AQA": [
+      {
+        "g": "Paper 1: Creative reading & writing",
+        "t": [
+          "Q1 identifying information",
+          "Q2 analysing language",
+          "Q3 analysing structure",
+          "Q4 evaluating texts critically",
+          "Q5 descriptive writing",
+          "Q5 narrative writing"
+        ]
+      },
+      {
+        "g": "Paper 2: Viewpoints & perspectives",
+        "t": [
+          "Q1 true/false statements",
+          "Q2 summarising & synthesising",
+          "Q3 analysing language (non-fiction)",
+          "Q4 comparing viewpoints & methods",
+          "Q5 writing to argue/persuade/advise"
+        ]
+      },
+      {
+        "g": "Reading skills",
+        "t": [
+          "Inference & interpretation",
+          "Selecting quotations",
+          "Analysing methods/techniques",
+          "Zooming in on word choices"
+        ]
+      },
+      {
+        "g": "Writing skills",
+        "t": [
+          "Vocabulary & ambitious word choice",
+          "Varying sentence structures",
+          "Paragraphing & discourse markers",
+          "Punctuation for effect",
+          "Spelling accuracy",
+          "Tone, register & audience"
+        ]
+      }
+    ],
+    "Edexcel": [
+      {
+        "g": "Paper 1: Fiction & imaginative writing",
+        "t": [
+          "Reading 19th-century fiction",
+          "Language analysis",
+          "Structure analysis",
+          "Evaluation",
+          "Imaginative writing"
+        ]
+      },
+      {
+        "g": "Paper 2: Non-fiction & transactional writing",
+        "t": [
+          "Reading 20th/21st-century non-fiction",
+          "Retrieval & inference",
+          "Language analysis",
+          "Comparing two texts",
+          "Transactional writing (letter/article/report)"
+        ]
+      },
+      {
+        "g": "Reading skills",
+        "t": [
+          "Inference & interpretation",
+          "Selecting evidence",
+          "Analysing methods"
+        ]
+      },
+      {
+        "g": "Writing skills",
+        "t": [
+          "Vocabulary for effect",
+          "Sentence variety",
+          "Paragraphing & structure",
+          "Punctuation accuracy",
+          "Spelling accuracy",
+          "Tone & register"
+        ]
+      }
+    ],
+    "OCR": [
+      {
+        "g": "Component 1: Communicating info & ideas",
+        "t": [
+          "Non-fiction reading",
+          "Synthesis & comparison",
+          "Language analysis",
+          "Writing for audience & purpose"
+        ]
+      },
+      {
+        "g": "Component 2: Exploring effects & impact",
+        "t": [
+          "Literature & imaginative reading",
+          "Analysing effects",
+          "Evaluation",
+          "Imaginative/creative writing"
+        ]
+      },
+      {
+        "g": "Reading skills",
+        "t": [
+          "Inference",
+          "Selecting evidence",
+          "Analysing methods"
+        ]
+      },
+      {
+        "g": "Writing skills",
+        "t": [
+          "Vocabulary & word choice",
+          "Sentence forms",
+          "Paragraphing",
+          "Punctuation",
+          "Spelling",
+          "Tone & register"
+        ]
+      }
+    ],
+    "WJEC / Eduqas": [
+      {
+        "g": "Component 1: 20th-century reading & creative writing",
+        "t": [
+          "Reading: language analysis",
+          "Reading: structure",
+          "Reading: evaluation",
+          "Prose / creative writing"
+        ]
+      },
+      {
+        "g": "Component 2: 19th & 21st-century reading & transactional writing",
+        "t": [
+          "Retrieval & inference",
+          "Language analysis",
+          "Comparison of two texts",
+          "Proofreading / editing",
+          "Transactional / persuasive writing"
+        ]
+      },
+      {
+        "g": "Reading skills",
+        "t": [
+          "Inference",
+          "Selecting evidence",
+          "Analysing methods"
+        ]
+      },
+      {
+        "g": "Writing skills",
+        "t": [
+          "Vocabulary & effect",
+          "Sentence variety",
+          "Paragraphing",
+          "Punctuation",
+          "Spelling",
+          "Tone & register"
+        ]
+      }
+    ],
+    "_": [
+      {
+        "g": "Paper 1: Creative reading & writing",
+        "t": [
+          "Q1 identifying information",
+          "Q2 analysing language",
+          "Q3 analysing structure",
+          "Q4 evaluating texts critically",
+          "Q5 descriptive writing",
+          "Q5 narrative writing"
+        ]
+      },
+      {
+        "g": "Paper 2: Viewpoints & perspectives",
+        "t": [
+          "Q1 true/false statements",
+          "Q2 summarising & synthesising",
+          "Q3 analysing language (non-fiction)",
+          "Q4 comparing viewpoints & methods",
+          "Q5 writing to argue/persuade/advise"
+        ]
+      },
+      {
+        "g": "Reading skills",
+        "t": [
+          "Inference & interpretation",
+          "Selecting quotations",
+          "Analysing methods/techniques",
+          "Zooming in on word choices"
+        ]
+      },
+      {
+        "g": "Writing skills",
+        "t": [
+          "Vocabulary & ambitious word choice",
+          "Varying sentence structures",
+          "Paragraphing & discourse markers",
+          "Punctuation for effect",
+          "Spelling accuracy",
+          "Tone, register & audience"
+        ]
+      }
+    ]
+  },
+  "Other": {
+    "_": []
+  }
+}

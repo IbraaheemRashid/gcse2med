@@ -13,6 +13,8 @@ const eslintConfig = defineConfig([
     "build/**",
     ".vercel/**",
     "next-env.d.ts",
+    // Generated copies of the supplied study engines; the adapter is linted normally.
+    "public/learning-tools/**",
   ]),
 ]);
 

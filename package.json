@@ -9,8 +9,11 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "check:banks": "node --experimental-strip-types --no-warnings=MODULE_TYPELESS_PACKAGE_JSON scripts/check-banks.mjs",
-    "check": "npm run lint && npm run typecheck && npm run check:banks",
-    "images": "node scripts/optimize-images.mjs"
+    "check": "npm run lint && npm run typecheck && npm run check:banks && npm run check:tracker",
+    "images": "node scripts/optimize-images.mjs",
+    "build:tools": "node scripts/build-learning-tools.mjs",
+    "check:tracker": "node --experimental-strip-types --no-warnings=MODULE_TYPELESS_PACKAGE_JSON --test scripts/check-paper-tracker.mjs",
+    "prebuild": "npm run build:tools"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",

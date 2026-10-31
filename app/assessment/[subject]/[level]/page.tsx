@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { getBank } from "@/content/assessments";
 import { toPublicQuestion } from "@/content/assessments/types";
 import {
@@ -9,6 +9,9 @@ import {
   type LevelId,
   type SubjectId,
 } from "@/content/subjects";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { Container } from "@/components/ui/Layout";
+import { StudyTool } from "@/components/resources/StudyTool";
 import { QuizRunner } from "@/components/assessment/QuizRunner";
 
 /** One page per bank, prerendered at build time. */
@@ -52,7 +55,7 @@ export default async function AssessmentPage(
   const parsed = parseParams(subject, level);
   if (!parsed) notFound();
 
-  if (parsed.level === "gcse") redirect(`/assessments/${parsed.subject}.html`);
+  if (parsed.level === "gcse") return <><PageHeader eyebrow="Free assessment" title={`GCSE ${subjectById[parsed.subject].name} assessment`} lead="Find your starting point and the topics to focus on next."/><Container className="py-8 sm:py-12"><StudyTool id={`${parsed.subject}-assessment`}/></Container></>;
 
   const bank = getBank(parsed.subject, parsed.level);
   if (!bank) notFound();

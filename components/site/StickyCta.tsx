@@ -14,7 +14,7 @@ import { ButtonLink } from "@/components/ui/Button";
  * flow itself, and on /book and /contact, where the visitor is already doing
  * the thing this would send them to.
  */
-const HIDDEN_ON = ["/assessment", "/book", "/contact"];
+const HIDDEN_ON = ["/assessment", "/resources", "/book", "/contact"];
 
 export function StickyCta() {
   const pathname = usePathname();

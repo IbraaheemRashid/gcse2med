@@ -148,3 +148,9 @@
   body { overflow-wrap: break-word; }
   input, select, textarea { font-size: max(1rem, 16px); }
 }
+
+/* Print only the mounted study sheet, keeping its own print layout. */
+@media print {
+  body:has(.study-tool) header, body:has(.study-tool) footer, body:has(.study-tool) main > :not(:has(.study-tool)), body:has(.study-tool) main > :has(.study-tool) > :not(.study-tool) { display:none!important; }
+  body:has(.study-tool) main, body:has(.study-tool) main > :has(.study-tool) { padding:0!important; margin:0!important; max-width:none!important; }
+}

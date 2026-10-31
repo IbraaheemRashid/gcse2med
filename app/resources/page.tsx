@@ -13,7 +13,7 @@ export default function ResourcesPage() {
         <p className="text-sm font-semibold text-accent-300">See your progress</p>
         <h2 className="mt-3 text-3xl font-bold text-white">Past paper tracker</h2>
         <p className="mt-4 max-w-2xl leading-relaxed">Log your papers, follow your scores and see which topics need another look. Start with the example papers or clear them to add your own.</p>
-        <ButtonLink href="/resources/tools/past-paper-tracker.html" variant="accent" className="mt-6">Open past paper tracker →</ButtonLink>
+        <ButtonLink href="/resources/past-paper-tracker" variant="accent" className="mt-6">Open past paper tracker →</ButtonLink>
         <p className="mt-4 text-sm text-white/85">Progress saves in this browser. Use the backup and sharing tools to keep a copy or share it with your tutor.</p>
       </div>
       <div className="mt-12"><SectionHeading title="Choose your subject" lead="Everything available for your subject, in one place." /></div>

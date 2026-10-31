@@ -13,13 +13,13 @@ function getResend(): Resend | null {
   const key = process.env.RESEND_API_KEY;
   resend = key ? new Resend(key) : null;
   if (!resend && process.env.NODE_ENV !== "production") {
-    console.warn("[email] RESEND_API_KEY not set — emails will be logged, not sent.");
+    console.warn("[email] RESEND_API_KEY not set — email delivery is unavailable.");
   }
   return resend;
 }
 
 /** Verified sending identity. Must be on a domain verified in Resend. */
-const FROM = process.env.EMAIL_FROM ?? `${site.name} <hello@gcse2med.com>`;
+const FROM = process.env.EMAIL_FROM ?? `${site.name} <hello@mail.gcse2med.com>`;
 /** Where enquiry and lead notifications land. */
 const INTERNAL_TO = process.env.EMAIL_INTERNAL_TO ?? site.email;
 
@@ -35,7 +35,7 @@ export async function sendEmail(options: {
   const client = getResend();
 
   if (!client) {
-    console.info(`[email] (not sent — no API key) to=${options.to} subject=${options.subject}`);
+    console.warn("[email] Delivery unavailable: RESEND_API_KEY is missing");
     return { ok: false, skipped: true, error: "Email delivery is not configured" };
   }
 
