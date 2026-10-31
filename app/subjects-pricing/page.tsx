@@ -12,7 +12,7 @@ import { pricingFaqs } from "@/content/faqs";
 export const metadata: Metadata = {
   title: "Subjects & pricing",
   description:
-    "GCSE Biology, Chemistry, Physics and Maths. Tuition from £59 per month for one subject. Book a consultation to discuss your child’s needs and availability.",
+    "GCSE English, Maths, Biology, Chemistry and Physics. Tuition from £59 per month for one subject. Book a consultation to discuss your child’s needs and availability.",
   alternates: { canonical: "/subjects-pricing" },
 };
 
@@ -24,7 +24,7 @@ export default function SubjectsPricingPage() {
       <PageHeader
         eyebrow="Subjects & pricing"
         title="Pick the subjects. Pick how closely we track them."
-        lead="Four subjects, two levels, personal support. Essential is open for enquiries; Success and Excellence are not currently accepting new students."
+        lead="Five subjects, GCSE tuition, personal support. Essential is open for enquiries; Success and Excellence are not currently accepting new students."
       />
 
       <Section className="bg-white">
@@ -32,7 +32,7 @@ export default function SubjectsPricingPage() {
           <SectionHeading
             eyebrow="Subjects"
             title="What we teach"
-            lead="Every subject is taught at GCSE, and our slides and summary sheets are mapped to the board your child sits."
+            lead="English, Maths and the sciences, taught at GCSE. Book a consultation to discuss your child’s subject and exam board."
           />
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -56,7 +56,7 @@ export default function SubjectsPricingPage() {
                 </p>
 
                 <p className="mt-4 text-sm text-ink-500">
-                  Exam boards: {subject.boards.join(", ")}
+                  {subject.boards.length ? `Exam boards: ${subject.boards.join(", ")}` : "Contact us to discuss your exam board."}
                 </p>
 
                 <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm">
@@ -72,8 +72,7 @@ export default function SubjectsPricingPage() {
                       </Link>
                     ) : (
                       <span key={level} className="text-ink-500">
-                        {levels.find((entry) => entry.id === level)?.shortName}{" "}
-                        assessment coming soon
+                        Contact us about {subject.name} tuition
                       </span>
                     ),
                   )}

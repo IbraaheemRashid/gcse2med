@@ -42,7 +42,7 @@ export default function AssessmentIndexPage() {
               />
 
               <div className="mt-8 space-y-4">
-                {subjects.map((subject) => (
+                {subjects.filter((subject) => subject.assessmentLevels.length > 0).map((subject) => (
                   <div
                     key={subject.id}
                     className="rounded-card border border-ink-200 bg-white p-6 shadow-card"

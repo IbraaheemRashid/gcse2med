@@ -1,7 +1,8 @@
+import { site } from "@/content/site";
 import { NextResponse } from "next/server";
 import { contactSchema } from "@/lib/schemas";
 import { recordLead } from "@/lib/supabase";
-import { sendInternalEmail } from "@/lib/email";
+import { sendEmail, sendInternalEmail } from "@/lib/email";
 import { internalNotificationEmail } from "@/lib/email-templates";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { verifyTurnstile } from "@/lib/turnstile";
@@ -31,7 +32,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const { name, email, phone, subject, message, marketingConsent, turnstileToken, website } =
+  const { name, email, phone, subject, message, consultation, marketingConsent, turnstileToken, website } =
     parsed.data;
 
   // Honeypot: silently accept so a bot gets no signal that it was caught.
@@ -44,8 +45,8 @@ export async function POST(request: Request) {
     );
   }
 
-  const sent = await sendInternalEmail({
-    ...internalNotificationEmail("New website enquiry", {
+  const notification = {
+    ...internalNotificationEmail(consultation ? "Free consultation request" : "New website enquiry", {
       Name: name,
       Email: email,
       Phone: phone || "—",
@@ -54,7 +55,10 @@ export async function POST(request: Request) {
       "Marketing consent": marketingConsent ? "yes" : "no",
     }),
     replyTo: email,
-  });
+  };
+  const sent = consultation
+    ? await sendEmail({ ...notification, to: site.email })
+    : await sendInternalEmail(notification);
 
   if (!sent.ok) {
     return NextResponse.json(
@@ -67,7 +71,7 @@ export async function POST(request: Request) {
     email,
     name,
     phone: phone ?? null,
-    source: "contact",
+    source: consultation ? "consultation" : "contact",
     message,
     marketingConsent: marketingConsent ?? false,
     metadata: { subject: subject ?? null },

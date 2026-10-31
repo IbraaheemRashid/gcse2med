@@ -39,7 +39,8 @@ export function ContactForm({ consultation = false }: { consultation?: boolean }
         body: JSON.stringify({
           name: String(form.get("name") ?? ""),
           email: String(form.get("email") ?? ""),
-          phone: String(form.get("phone") ?? "") || undefined,
+          phone: String(form.get("phone") ?? ""),
+          consultation,
           subject: String(form.get("subject") ?? "") || undefined,
           message: consultation ? `Consultation request (not confirmed). Preferred date: ${form.get("preferredDate") || "Flexible"}. Preferred time (UK): ${form.get("preferredTime") || "Flexible"}.\n${form.get("message") || "Please contact me to arrange a consultation."}` : String(form.get("message") ?? ""),
           marketingConsent: form.get("marketingConsent") === "on",
@@ -63,7 +64,7 @@ export function ContactForm({ consultation = false }: { consultation?: boolean }
       <div className="rounded-card border border-emerald-200 bg-emerald-50 p-8">
         <h2 className="text-xl font-bold text-emerald-900">{consultation ? "Consultation request sent" : "Message sent"}</h2>
         <p className="mt-3 text-[15px] leading-relaxed text-emerald-800">
-          Thank you — we’ll reply by email. {consultation ? "Your preferred time is a request; we’ll confirm an appointment with you." : "We look forward to hearing more about your child."}
+          Thank you — we’ll be in touch using the contact details you provided. {consultation ? "Your preferred time is a request; we’ll confirm an appointment with you." : "We look forward to hearing more about your child."}
         </p>
       </div>
     );
@@ -91,8 +92,8 @@ export function ContactForm({ consultation = false }: { consultation?: boolean }
           />
         </Field>
 
-        <Field label="Phone" optional className="sm:col-span-1">
-          <input name="phone" type="tel" autoComplete="tel" className={inputClasses} />
+        <Field label="Phone" className="sm:col-span-1">
+          <input name="phone" required minLength={7} maxLength={40} type="tel" autoComplete="tel" className={inputClasses} />
         </Field>
 
         <Field label="Subject of interest" optional className="sm:col-span-1">

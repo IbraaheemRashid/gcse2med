@@ -8,7 +8,7 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: "Contact us",
   description:
-    "Get in touch with GCSE2MED about small-group GCSE tuition in Biology, Chemistry, Physics and Maths.",
+    "Get in touch with GCSE2MED about small-group GCSE tuition in English, Maths, Biology, Chemistry and Physics.",
   alternates: { canonical: "/contact" },
 };
 

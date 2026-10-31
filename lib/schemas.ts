@@ -36,7 +36,10 @@ export const reportRequestSchema = submitAssessmentSchema.extend({
 export const contactSchema = z.object({
   name: z.string().trim().min(2, "Please enter your name").max(80),
   email: emailSchema,
-  phone: z.string().trim().max(40).optional(),
+  phone: z.string().trim().min(7, "Please enter a phone number").max(40)
+    .regex(/^[+()\d\s.\-]+$/, "Please enter a valid phone number")
+    .refine(value => value.replace(/\D/g, "").length >= 7, "Please enter a valid phone number"),
+  consultation: z.boolean().default(false),
   subject: z.string().trim().max(120).optional(),
   message: z.string().trim().min(10, "Please tell us a little more").max(4000),
   marketingConsent: z.boolean().optional(),

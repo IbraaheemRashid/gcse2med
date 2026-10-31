@@ -1,5 +1,6 @@
 import { Team } from "@/components/site/Team";
 import { IntroVideo } from "@/components/home/IntroVideo";
+import { TutorChecks } from "@/components/site/TutorChecks";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Container, Section, SectionHeading, Eyebrow } from "@/components/ui/Layout";
@@ -90,6 +91,7 @@ export default function AboutPage() {
                     </div>
                   </div>
 
+                  <TutorChecks />
                   {founder.bio.map((paragraph, index) => (
                     <p
                       key={index}
@@ -226,9 +228,8 @@ export default function AboutPage() {
                   lessons — before this goes live. Parents look for this. */}
               <p className="mt-5 text-[17px] leading-relaxed text-ink-600">
                 Most of our students are under eighteen, and we take that seriously.
-                We are developing our safeguarding information. Please contact us to
-                discuss tutor checks, online lesson arrangements and how to raise a
-                concern before enrolling your child.
+                All our tutors are DBS checked and have completed safeguarding training.
+                Please contact us to discuss online lesson arrangements or raise a safeguarding concern.
               </p>
 
               <div className="mt-8 rounded-card bg-brand-50 p-6">

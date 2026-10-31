@@ -30,7 +30,7 @@ export default function TermsPage() {
       <LegalSection heading="The service">
         <p>
           We provide online small-group tuition in GCSE Biology, Chemistry,
-          Physics and Maths. Each tier includes a weekly one-hour lesson per subject and
+          Physics, Maths and English. Each tier includes a weekly one-hour lesson per subject and
           the resources set out on our{" "}
           <Link href="/subjects-pricing">subjects and pricing page</Link>.
         </p>

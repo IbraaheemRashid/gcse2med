@@ -5,7 +5,7 @@
  */
 
 export type LevelId = "gcse" | "a-level";
-export type SubjectId = "biology" | "chemistry" | "physics" | "maths";
+export type SubjectId = "biology" | "chemistry" | "physics" | "maths" | "english";
 
 export const levels: { id: LevelId; name: string; shortName: string }[] = [
   { id: "gcse", name: "GCSE", shortName: "GCSE" },
@@ -26,6 +26,12 @@ export type Subject = {
 };
 
 export const subjects: Subject[] = [
+  {
+    id: "english", name: "English",
+    blurb: "Build confidence in reading, writing and explaining your ideas with support from our English tutors.",
+    boards: [], levels: ["gcse"], assessmentLevels: [],
+    accent: "bg-rose-50 text-rose-800 ring-rose-200",
+  },
   {
     id: "biology",
     name: "Biology",

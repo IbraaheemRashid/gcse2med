@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { resourceSubjects } from "@/content/resource-subjects";
 import { site } from "@/content/site";
 import { subjects } from "@/content/subjects";
 
@@ -32,5 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: route.priority,
     })),
     ...assessmentRoutes,
+    ...resourceSubjects.map(subject => ({ url: `${site.url}/resources/${subject.id}`, changeFrequency: "monthly" as const, priority: 0.7 })),
   ];
 }

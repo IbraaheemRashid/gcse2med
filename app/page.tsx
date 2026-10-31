@@ -1,3 +1,4 @@
+import { ExamCountdown } from "@/components/home/ExamCountdown";
 import type { Metadata } from "next";
 import { FounderClass } from "@/components/home/FounderClass";
 import { Hero } from "@/components/home/Hero";
@@ -18,6 +19,7 @@ export default function HomePage() {
   return (
     <div className="home-refresh">
       <Hero />
+      <ExamCountdown />
       <Reviews />
       <TierSummary />
       <IntroVideo />

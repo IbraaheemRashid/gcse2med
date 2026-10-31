@@ -29,7 +29,7 @@ export type Video = {
 export const introVideo: Video = {
   id: "intro",
   src: "/video/founders-october.mp4",
-  poster: "/video/founders-october.jpg",
+  poster: "/video/founders-welcome.jpg",
   label: "The GCSE2MED founders introducing the tuition",
   summary:
     "Yahiya and Subayr introduce GCSE2MED and the support they want to give students throughout their learning journey.",
