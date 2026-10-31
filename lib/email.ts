@@ -4,9 +4,7 @@ import { Resend } from "resend";
 import { site } from "@/content/site";
 
 /**
- * Email sending, degrading gracefully when RESEND_API_KEY is absent: the
- * message is logged instead of sent so local development and the first deploy
- * work end to end without credentials.
+ * Missing credentials return a failure so forms never claim an unsent message arrived.
  */
 let resend: Resend | null | undefined;
 
@@ -38,9 +36,10 @@ export async function sendEmail(options: {
 
   if (!client) {
     console.info(`[email] (not sent — no API key) to=${options.to} subject=${options.subject}`);
-    return { ok: true, skipped: true };
+    return { ok: false, skipped: true, error: "Email delivery is not configured" };
   }
 
+  try {
   const { error } = await client.emails.send({
     from: FROM,
     to: options.to,
@@ -55,6 +54,10 @@ export async function sendEmail(options: {
     return { ok: false, error: error.message };
   }
   return { ok: true };
+  } catch {
+    console.error("[email] Delivery request failed");
+    return { ok: false, error: "Email delivery failed" };
+  }
 }
 
 export async function sendInternalEmail(options: {

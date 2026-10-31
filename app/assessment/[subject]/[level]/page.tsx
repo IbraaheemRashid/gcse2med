@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getBank } from "@/content/assessments";
 import { toPublicQuestion } from "@/content/assessments/types";
 import {
@@ -51,6 +51,8 @@ export default async function AssessmentPage(
   const { subject, level } = await props.params;
   const parsed = parseParams(subject, level);
   if (!parsed) notFound();
+
+  if (parsed.level === "gcse") redirect(`/assessments/${parsed.subject}.html`);
 
   const bank = getBank(parsed.subject, parsed.level);
   if (!bank) notFound();

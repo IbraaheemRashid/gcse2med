@@ -25,7 +25,7 @@ export function Reviews() {
 
   if (!hasTrustpilot && reviews.length === 0 && !trustpilotUrl) return (
     <section className="border-b border-ink-100 bg-white py-6">
-      <Container><div className="flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between"><h2 className="font-semibold text-brand-950">What students say</h2><p className="text-ink-500">Our first family reviews are on their way.</p></div></Container>
+      <Container><div className="flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between"><h2 className="font-semibold text-brand-950">What families say</h2><p className="text-ink-500">Our first family reviews are on their way.</p></div></Container>
     </section>
   );
 
@@ -33,12 +33,12 @@ export function Reviews() {
     <Section id="reviews" className="bg-ink-50">
       <Container>
         <SectionHeading
-          eyebrow="What students say"
+          eyebrow="What families say"
           title="A little support. A real difference."
           lead={
             hasTrustpilot || trustpilotUrl
               ? "Read feedback from our families on Trustpilot."
-              : "Messages from students about our tuition and live revision sessions. Excerpts in their own words."
+              : "Messages from parents and students about our tuition and live revision sessions. Excerpts in their own words."
           }
           align="center"
         />

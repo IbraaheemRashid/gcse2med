@@ -23,9 +23,7 @@ export function IntroVideo() {
               {introVideo.summary}
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-ink-600">
-              You are not being matched with whoever is free this week. The people
-              in this video are the people in the lesson, and they are the ones who
-              will tell you what your child needs.
+              Meet Yahiya and Subayr, the founders of GCSE2MED, and hear about the support they want to give every student.
             </p>
             <p className="mt-5 font-semibold text-brand-950">Yahiya &amp; Subayr · Co-Founders</p>
             <div className="mt-8">
@@ -35,7 +33,7 @@ export function IntroVideo() {
             </div>
           </div>
 
-          <VerticalVideo video={introVideo} mode="feed" />
+          <VerticalVideo video={introVideo} mode="click" />
         </div>
       </Container>
     </Section>

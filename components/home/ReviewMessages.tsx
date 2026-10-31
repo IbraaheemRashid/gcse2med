@@ -4,8 +4,8 @@ import type { Review } from "@/content/reviews";
 export function ReviewMessages({ reviews }: { reviews: Review[] }) {
   return (
     <>
-      <p id="review-scroll-hint" className="mt-5 text-sm text-ink-500">Scroll across to read more student messages →</p>
-      <div tabIndex={0} role="region" aria-label="Student testimonials" aria-describedby="review-scroll-hint" className="mt-5 overflow-x-auto rounded-2xl pb-5 snap-x snap-mandatory">
+      <p id="review-scroll-hint" className="mt-5 text-sm text-ink-500">Scroll across to read more family messages →</p>
+      <div tabIndex={0} role="region" aria-label="Parent and student testimonials" aria-describedby="review-scroll-hint" className="mt-5 overflow-x-auto rounded-2xl pb-5 snap-x snap-mandatory">
         <ul className="flex items-stretch gap-5">
           {reviews.map((review, index) => (
             <li key={review.id} className={`flex w-[86%] shrink-0 snap-start flex-col rounded-2xl border p-6 sm:w-[46%] lg:w-[31.5%] ${index % 2 === 0 ? "border-brand-100 bg-white" : "border-brand-200 bg-brand-50"}`}>

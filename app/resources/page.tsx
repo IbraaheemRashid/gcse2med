@@ -1,3 +1,4 @@
+import { ResourceDownloads } from "@/components/site/ResourceDownloads";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Container, Section, SectionHeading, Badge, Eyebrow } from "@/components/ui/Layout";
@@ -24,6 +25,7 @@ export default function ResourcesPage() {
         lead="Resources are only half of it. The other half is that every one of them is tracked, so 'they have been revising' turns into something you can actually check."
       />
 
+      <ResourceDownloads />
       <Section className="bg-white">
         <Container>
           <SectionHeading
@@ -56,19 +58,7 @@ export default function ResourcesPage() {
             ))}
           </div>
 
-          {/* TODO(client): swap this note for real downloadable samples once the
-              slides, summary sheets and flashcard decks are exported. */}
-          <p className="mt-8 rounded-card border border-dashed border-ink-300 bg-ink-50 px-6 py-5 text-[15px] leading-relaxed text-ink-600">
-            We are continuing to build our resources. Specification checklists and
-            flashcard decks will be added as they become available. For resource enquiries,{" "}
-            <a
-              href="/contact"
-              className="font-semibold text-brand-700 underline underline-offset-4"
-            >
-              ask us
-            </a>{" "}
-            about what is currently available.
-          </p>
+
         </Container>
       </Section>
 

@@ -12,7 +12,7 @@ export const site = {
   description:
     "Small-group GCSE and A-level tuition in Biology, Chemistry, Physics and Maths. We diagnose what is holding your child back, target it, and measure the progress.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gcse2med.com",
-  email: "hello@gcse2med.com", // TODO(client): confirm
+  email: "yahiya@gcse2med.com",
   /** Optional — omitted from the UI when blank. */
   phone: "",
   socials: {

@@ -9,9 +9,9 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import Link from "next/link";
-import { bookingUrl, site } from "@/content/site";
-import { Button, ButtonLink } from "@/components/ui/Button";
+import { ContactForm } from "@/components/site/ContactForm";
+import { bookingUrl } from "@/content/site";
+import { Button } from "@/components/ui/Button";
 
 type BookingContextValue = {
   open: (source?: string) => void;
@@ -133,38 +133,12 @@ export function BookingProvider({ children }: { children: ReactNode }) {
                   loading="lazy"
                 />
               ) : (
-                <BookingFallback onNavigate={close} />
+                <div className="p-4 sm:p-6"><ContactForm consultation /></div>
               )}
             </div>
           </div>
         </div>
       ) : null}
     </BookingContext.Provider>
-  );
-}
-
-/**
- * Shown when NEXT_PUBLIC_BOOKING_URL is unset. Better an honest route to a
- * human than an iframe pointing at nothing.
- */
-function BookingFallback({ onNavigate }: { onNavigate: () => void }) {
-  return (
-    <div className="px-6 py-10 text-center">
-      <p className="text-base leading-relaxed text-ink-700">
-        Online booking is being set up. In the meantime, send us a message and we
-        will come back with times that work around your child&apos;s school day.
-      </p>
-      <div className="mt-6 flex flex-wrap justify-center gap-3">
-        <ButtonLink href="/contact" onClick={onNavigate}>
-          Send a message
-        </ButtonLink>
-        <Link
-          href={`mailto:${site.email}`}
-          className="inline-flex items-center px-4 py-2.5 text-[15px] font-semibold leading-6 text-brand-700 hover:underline"
-        >
-          {site.email}
-        </Link>
-      </div>
-    </div>
   );
 }

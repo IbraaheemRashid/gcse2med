@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { ContactForm } from "@/components/site/ContactForm";
 import { Container, Section } from "@/components/ui/Layout";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { ButtonLink } from "@/components/ui/Button";
-import { bookingUrl, site } from "@/content/site";
+import { bookingUrl } from "@/content/site";
 import { methodology } from "@/content/methodology";
 
 export const metadata: Metadata = {
@@ -43,27 +43,7 @@ export default function BookPage() {
                   />
                 </div>
               ) : (
-                /* Shown until NEXT_PUBLIC_BOOKING_URL points at a real Cal.com or
-                   Calendly event — an honest route to a human beats a dead iframe. */
-                <div className="rounded-card border border-dashed border-ink-300 bg-ink-50 p-8">
-                  <h2 className="text-xl font-bold">Online booking is being set up</h2>
-                  <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
-                    In the meantime, send us a message and we will come back with times
-                    that work around your child&apos;s school day &mdash; usually the
-                    same day.
-                  </p>
-                  <div className="mt-6 flex flex-wrap gap-3">
-                    <ButtonLink href="/contact" size="lg">
-                      Send a message
-                    </ButtonLink>
-                    <Link
-                      href={`mailto:${site.email}`}
-                      className="inline-flex items-center px-4 py-3.5 font-semibold text-brand-700 underline underline-offset-4"
-                    >
-                      {site.email}
-                    </Link>
-                  </div>
-                </div>
+                <ContactForm consultation />
               )}
             </div>
 

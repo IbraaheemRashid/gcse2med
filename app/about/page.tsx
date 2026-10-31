@@ -1,3 +1,5 @@
+import { Team } from "@/components/site/Team";
+import { IntroVideo } from "@/components/home/IntroVideo";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Container, Section, SectionHeading, Eyebrow } from "@/components/ui/Layout";
@@ -57,7 +59,7 @@ export default function AboutPage() {
           <Container>
             <SectionHeading
               eyebrow="Who we are"
-              title="The people teaching your child"
+              title="Meet the founders"
               lead="We teach the lessons ourselves. If something is not working for your child, you are talking to the people who can change it."
             />
 
@@ -118,6 +120,8 @@ export default function AboutPage() {
         </Section>
       ) : null}
 
+      <IntroVideo />
+      <Team />
       <Section className="bg-white">
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -185,7 +189,7 @@ export default function AboutPage() {
         <Container>
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <SectionHeading eyebrow="Our tutors" title="Who teaches the lessons" />
+              <SectionHeading eyebrow="Our approach" title="Small groups, personal support" />
               {/* TODO(client): tutor credentials — degrees, exam boards examined for,
                   years teaching, subjects. These are factual claims about real people,
                   so they need to come from you. */}

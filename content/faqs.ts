@@ -45,7 +45,7 @@ export const assessmentFaqs: Faq[] = [
   {
     question: "How long does the assessment take?",
     answer:
-      "Around ten minutes. It is multiple choice, and it is designed to find the gaps quickly rather than to be an exam.",
+      "The question count and suggested time vary by subject and course. Each assessment explains these before you start. It is designed to help find the gaps rather than to be a formal exam.",
   },
   {
     question: "Is it really free?",

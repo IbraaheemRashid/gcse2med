@@ -29,7 +29,7 @@ export default function AssessmentIndexPage() {
       <PageHeader
         eyebrow={`Step 1: ${methodology[0].step}`}
         title="Find out where your child actually stands"
-        lead="A short multiple-choice assessment that marks itself. Around ten minutes, completely free, and no account required."
+        lead="A free assessment that marks itself. Choose your subject to see the question count and suggested time. No account required."
       />
 
       <Section className="bg-white">

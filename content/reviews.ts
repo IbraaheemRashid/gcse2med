@@ -19,7 +19,58 @@ export type Review = {
   screenshot?: string;
 };
 
+// October 2026 supplied review excerpts. Duplicate Amina screenshot represented once.
+// Contact numbers and private chat headers are deliberately not published.
 export const reviews: Review[] = [
+{
+  "id": "asiya-parent",
+  "author": "Asiya",
+  "relation": "Parent of a Year 10 student",
+  "quote": "As a parent, one of the biggest differences I’ve noticed is his attitude towards learning. He’s become more motivated and is happy to put in the extra time and effort, which is lovely to see."
+},
+{
+  "id": "parent-gcse",
+  "author": "Parent",
+  "relation": "Parent of a GCSE student",
+  "quote": "Their teaching techniques are teen-friendly, and they strike a perfect balance between motivating students to achieve and keeping the lessons relaxed and engaging."
+},
+{
+  "id": "amina",
+  "author": "Amina",
+  "relation": "Tuition feedback",
+  "quote": "They explain things really well and make learning so much easier. They’re always patient and supportive and I would definitely recommend them to anyone looking for an effective tutor"
+},
+{
+  "id": "abs",
+  "author": "Abs",
+  "relation": "Student · Founders Class",
+  "quote": "i enjoyed the lessons so far i like how u ask every student questions and like make sure everyone gets involved and how u provide the summary sheets for us to go over"
+},
+{
+  "id": "sami",
+  "author": "Sami",
+  "relation": "GCSE tuition feedback",
+  "quote": "They explain topics clearly and are always patient and supportive and make sure you understand everything before moving on."
+},
+{
+  "id": "lily-mae",
+  "author": "Lily Mae",
+  "relation": "Tuition feedback",
+  "quote": "The tuition has been excellent! Subayr goes into detail and explains everything so it’s a lot easier to understand and always helps if you are stuck."
+},
+{
+  "id": "hajrah",
+  "author": "Hajrah",
+  "relation": "Tuition feedback",
+  "quote": "GCSE2Med has been an excellent provider in making sure their lessons are understandable to everyone, and Subayr is always open to questions, making it an overall welcoming and educational environment!"
+},
+{
+  "id": "rim",
+  "author": "Rim",
+  "relation": "Maths tuition feedback",
+  "quote": "i’ve been finding the maths sessions really helpful so far the explanations are easy to understand, and i feel like i’m gaining more confidence in topics i used to struggle with."
+},
+
   {
     id: "marva-gcse",
     author: "Marva",
