@@ -30,7 +30,7 @@ export default function PrivacyPage() {
     >
       <LegalSection heading="Who we are">
         <p>
-          {site.legalName} provides small-group online tuition to GCSE and A-level
+          {site.legalName} provides small-group online tuition to GCSE
           students in the UK. For data protection purposes we are the data controller
           for information collected through this website. You can reach us at{" "}
           <a href={`mailto:${site.email}`}>{site.email}</a>.

@@ -3,7 +3,7 @@ import { z } from "zod";
 /** Shared request shapes. Safe to import from client code — no secrets here. */
 
 export const subjectIdSchema = z.enum(["biology", "chemistry", "physics", "maths"]);
-export const levelIdSchema = z.enum(["gcse", "a-level"]);
+export const levelIdSchema = z.enum(["gcse"]);
 
 export const answerSchema = z.object({
   questionId: z.string().min(1).max(64),

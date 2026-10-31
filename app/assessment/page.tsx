@@ -10,9 +10,9 @@ import { assessmentFaqs } from "@/content/faqs";
 import { methodology } from "@/content/methodology";
 
 export const metadata: Metadata = {
-  title: "Free GCSE & A-level assessment",
+  title: "Free GCSE assessment",
   description:
-    "A free, self-marking multiple-choice assessment in GCSE and A-level Biology, Chemistry, Physics and Maths. Get a score, every wrong answer explained, and the topics to work on first.",
+    "A free, self-marking multiple-choice assessment in GCSE Biology, Chemistry, Physics and Maths. Get a score, every wrong answer explained, and the topics to work on first.",
   alternates: { canonical: "/assessment" },
 };
 
@@ -79,7 +79,7 @@ export default function AssessmentIndexPage() {
               </div>
 
               <p className="mt-6 text-sm text-ink-500">
-                More subjects and levels are being written now. If the one you need is
+                More resources are being written now. If the one you need is
                 not here yet,{" "}
                 <Link
                   href="/contact"

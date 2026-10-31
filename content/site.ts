@@ -10,7 +10,7 @@ export const site = {
   tagline: "The support that understands YOUR child",
   strapline: "Small groups. Expert tutors. Targeted support. Measurable progress.",
   description:
-    "Small-group GCSE and A-level tuition in Biology, Chemistry, Physics and Maths. We diagnose what is holding your child back, target it, and measure the progress.",
+    "Small-group GCSE tuition in Biology, Chemistry, Physics and Maths. We diagnose what is holding your child back, target it, and measure the progress.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gcse2med.com",
   email: "yahiya@gcse2med.com",
   /** Optional — omitted from the UI when blank. */

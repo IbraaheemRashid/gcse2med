@@ -6,7 +6,7 @@ import { BookButton } from "@/components/site/BookButton";
 export function Hero() {
  return <section className="bg-white pb-8"><Container>
   <div className="py-8 sm:py-12">
-   <p className="text-sm font-semibold text-brand-700">GCSE &amp; A-level · Maths &amp; Sciences</p>
+   <p className="text-sm font-semibold text-brand-700">GCSE · Maths &amp; Sciences</p>
    <h1 className="mt-4 max-w-5xl text-[clamp(2.1rem,5.8vw,4.5rem)] font-bold leading-[1.07] tracking-tight text-brand-950">The support that<br/><span className="text-brand-600">understands <span className="decoration-accent-400 underline decoration-4 underline-offset-8">YOUR</span> child</span></h1>
    <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">{["Maths","Biology","Chemistry","Physics"].map((name,i)=><Link key={name} href={`/subjects-pricing#subject-${name.toLowerCase()}`} className="flex items-center justify-between gap-2 rounded-2xl bg-brand-50 p-4 font-bold text-brand-700 sm:p-5"><span>{name}</span><span aria-hidden="true" className="rounded-xl bg-white px-3 py-2">{["π","⌘","⚗","⚛"][i]}</span></Link>)}</div>
   </div>

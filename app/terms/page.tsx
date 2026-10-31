@@ -6,7 +6,7 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: "Terms of service",
   description:
-    "The terms on which GCSE2MED provides small-group GCSE and A-level tuition, including payment, cancellation and conduct.",
+    "The terms on which GCSE2MED provides small-group GCSE tuition, including payment, cancellation and conduct.",
   alternates: { canonical: "/terms" },
 };
 
@@ -29,7 +29,7 @@ export default function TermsPage() {
     >
       <LegalSection heading="The service">
         <p>
-          We provide online small-group tuition in GCSE and A-level Biology, Chemistry,
+          We provide online small-group tuition in GCSE Biology, Chemistry,
           Physics and Maths. Each tier includes a weekly one-hour lesson per subject and
           the resources set out on our{" "}
           <Link href="/subjects-pricing">subjects and pricing page</Link>.

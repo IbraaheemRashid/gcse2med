@@ -6,7 +6,7 @@ export function TierSummary() {
   return (
     <Section id="pricing" className="bg-white">
       <Container>
-        <SectionHeading title="The right subjects. The support they need." lead="Maths, Biology, Chemistry and Physics. GCSE and A-level tuition that fits around the school week." align="center" />
+        <SectionHeading title="The right subjects. The support they need." lead="Maths, Biology, Chemistry and Physics. GCSE tuition that fits around the school week." align="center" />
         <div className="mt-7 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center">
           {["Maths", "Biology", "Chemistry", "Physics"].map((name) => <Link key={name} href={`/subjects-pricing#subject-${name.toLowerCase()}`} className="rounded-full border border-brand-200 px-4 py-3 text-center text-base font-semibold text-brand-950 transition-colors hover:bg-brand-50">{name} <span aria-hidden="true">↗</span></Link>)}
         </div>

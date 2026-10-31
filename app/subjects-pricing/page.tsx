@@ -12,7 +12,7 @@ import { pricingFaqs } from "@/content/faqs";
 export const metadata: Metadata = {
   title: "Subjects & pricing",
   description:
-    "GCSE and A-level Biology, Chemistry, Physics and Maths. Tuition from £59 per month for one subject. Book a consultation to discuss your child’s needs and availability.",
+    "GCSE Biology, Chemistry, Physics and Maths. Tuition from £59 per month for one subject. Book a consultation to discuss your child’s needs and availability.",
   alternates: { canonical: "/subjects-pricing" },
 };
 
@@ -32,7 +32,7 @@ export default function SubjectsPricingPage() {
           <SectionHeading
             eyebrow="Subjects"
             title="What we teach"
-            lead="Every subject is taught at both GCSE and A-level, and our slides and summary sheets are mapped to the board your child sits."
+            lead="Every subject is taught at GCSE, and our slides and summary sheets are mapped to the board your child sits."
           />
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2">

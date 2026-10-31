@@ -13,7 +13,7 @@ import { founders } from "@/content/founders";
 export const metadata: Metadata = {
   title: "About us",
   description:
-    "Why GCSE2MED exists: small-group GCSE and A-level tuition built around measuring progress rather than assuring parents that everything is fine.",
+    "Why GCSE2MED exists: small-group GCSE tuition built around measuring progress rather than assuring parents that everything is fine.",
   alternates: { canonical: "/about" },
 };
 
@@ -195,7 +195,7 @@ export default function AboutPage() {
                   so they need to come from you. */}
               <p className="mt-5 text-[17px] leading-relaxed text-ink-600">
                 Every lesson is taught by a subject specialist who teaches that
-                specification at both GCSE and A-level. Full tutor profiles &mdash;
+                specification at GCSE. Full tutor profiles &mdash;
                 qualifications, experience and the boards they know best &mdash; are
                 published here as the team grows, and we will always tell you who your
                 child&apos;s tutor is before you commit.

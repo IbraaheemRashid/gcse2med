@@ -5,9 +5,7 @@ import { assessmentKey } from "../subjects";
 import type { QuestionBank } from "./types";
 
 import { bank as biologyGcse } from "./biology-gcse";
-import { bank as biologyALevel } from "./biology-a-level";
 import { bank as chemistryGcse } from "./chemistry-gcse";
-import { bank as chemistryALevel } from "./chemistry-a-level";
 import { bank as physicsGcse } from "./physics-gcse";
 import { bank as mathsGcse } from "./maths-gcse";
 
@@ -20,9 +18,7 @@ import { bank as mathsGcse } from "./maths-gcse";
  */
 const banks: QuestionBank[] = [
   biologyGcse,
-  biologyALevel,
   chemistryGcse,
-  chemistryALevel,
   physicsGcse,
   mathsGcse,
 ];

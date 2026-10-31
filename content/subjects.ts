@@ -9,7 +9,6 @@ export type SubjectId = "biology" | "chemistry" | "physics" | "maths";
 
 export const levels: { id: LevelId; name: string; shortName: string }[] = [
   { id: "gcse", name: "GCSE", shortName: "GCSE" },
-  { id: "a-level", name: "A-level", shortName: "A-level" },
 ];
 
 export type Subject = {
@@ -33,8 +32,8 @@ export const subjects: Subject[] = [
     blurb:
       "The subject students most often lose marks on for the wrong reason — recall is fine, but the answer never quite says what the mark scheme wants.",
     boards: ["AQA", "Edexcel", "OCR"],
-    levels: ["gcse", "a-level"],
-    assessmentLevels: ["gcse", "a-level"],
+    levels: ["gcse"],
+    assessmentLevels: ["gcse"],
     accent: "bg-emerald-50 text-emerald-800 ring-emerald-200",
   },
   {
@@ -43,8 +42,8 @@ export const subjects: Subject[] = [
     blurb:
       "Moles, equations and required practicals, taught until the method is automatic and the calculation stops being the scary part.",
     boards: ["AQA", "Edexcel", "OCR"],
-    levels: ["gcse", "a-level"],
-    assessmentLevels: ["gcse", "a-level"],
+    levels: ["gcse"],
+    assessmentLevels: ["gcse"],
     accent: "bg-brand-50 text-brand-800 ring-brand-200",
   },
   {
@@ -53,7 +52,7 @@ export const subjects: Subject[] = [
     blurb:
       "Equation selection, unit conversion and the long-answer questions that separate a grade 6 from a grade 8.",
     boards: ["AQA", "Edexcel", "OCR"],
-    levels: ["gcse", "a-level"],
+    levels: ["gcse"],
     assessmentLevels: ["gcse"],
     accent: "bg-violet-50 text-violet-800 ring-violet-200",
   },
@@ -63,7 +62,7 @@ export const subjects: Subject[] = [
     blurb:
       "From securing the foundations to the multi-step problem solving that carries the top grades.",
     boards: ["AQA", "Edexcel", "OCR"],
-    levels: ["gcse", "a-level"],
+    levels: ["gcse"],
     assessmentLevels: ["gcse"],
     accent: "bg-accent-50 text-accent-800 ring-accent-200",
   },

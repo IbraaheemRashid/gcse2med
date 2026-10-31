@@ -47,7 +47,7 @@ export const tiers: Tier[] = [
     groupLabel: "Max 8 students per group",
     inherits: [],
     features: [
-      "Expert GCSE & A-level tutors",
+      "Expert GCSE tutors",
       "1hr lesson every week",
       "8 students max per group",
       "Annotated lesson slides",
