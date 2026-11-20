@@ -19,7 +19,7 @@ export default function PrivacyPage() {
   return (
     <LegalPage
       title="Privacy policy"
-      updated="21 August 2026"
+      updated="20 November 2026"
       intro={
         <p>
           This policy covers the {site.name} website. Because most of our students are
@@ -65,8 +65,8 @@ export default function PrivacyPage() {
             which collects the name, email address and time slot you give it.
           </li>
           <li>
-            <strong>Technical data.</strong> Aggregate, anonymous page-view statistics.
-            We do not use advertising cookies or cross-site trackers.
+            <strong>Website visits.</strong> We collect aggregate page-view statistics.
+            If you allow advertising cookies, we also share page visits with Meta.
           </li>
         </ul>
       </LegalSection>
@@ -90,14 +90,18 @@ export default function PrivacyPage() {
             <strong>To improve the assessments and the site</strong> — legitimate
             interests, using aggregated results rather than individual ones.
           </li>
+          <li>
+            <strong>To measure our advertising.</strong> We use the Meta Pixel with your consent.
+            You can change your choice in Cookie settings at the bottom of every page.
+          </li>
         </ul>
       </LegalSection>
 
       <LegalSection heading="Children's data">
         <p>
           Our assessments are designed for students, many of whom are under eighteen. A
-          student can complete an assessment and see their results without giving us any
-          personal information at all.
+          student can complete an assessment and see their results without entering a
+          name or email address, or allowing advertising cookies.
         </p>
         <p>
           If a student is under 13, we ask that a parent or guardian enters the email
@@ -109,8 +113,7 @@ export default function PrivacyPage() {
 
       <LegalSection heading="Who we share it with">
         <p>
-          We do not sell personal data, and we do not share it for advertising. We use a
-          small number of processors to run the site:
+          We do not sell personal data. We use the following providers to run the site.
         </p>
         <ul>
           <li>Our hosting provider, to serve the website.</li>
@@ -119,6 +122,12 @@ export default function PrivacyPage() {
           <li>Our scheduling provider, to run consultation bookings.</li>
           <li>Our anti-spam provider, to keep the forms from being abused.</li>
         </ul>
+        <p>
+          If you allow advertising cookies, Meta receives the address of the page you visit,
+          browser information, your IP address and cookie identifiers. Meta may match the
+          visit to a Facebook or Instagram account to measure and personalise advertising.
+          See <a href="https://www.facebook.com/privacy/policy/">Meta’s privacy policy</a>.
+        </p>
         <p>
           {/* TODO(client): name each provider explicitly once the accounts exist —
               a generic list is not sufficient under UK GDPR transparency rules. */}
@@ -165,11 +174,20 @@ export default function PrivacyPage() {
       </LegalSection>
 
       <LegalSection heading="Cookies">
+        <p id="advertising-cookies">
+          Advertising cookies start switched off. If you are 13 or older, you can
+          allow the Meta Pixel to count page visits, including visits to an assessment.
+          We send a page-view event. Assessment answers, scores and email addresses
+          are excluded from that event. You can use the whole site with the pixel off.
+        </p>
         <p>
-          This site does not set advertising or tracking cookies, and our analytics are
-          collected without them. Your browser may store a small amount of data on your
-          own device to remember an assessment you are part-way through &mdash; that
-          never leaves your device and is cleared when you close the tab.
+          A cookie remembers your choice in this browser for 180 days. To switch the
+          pixel on or off, open Cookie settings at the bottom of any page. Switching it
+          off stops future page-view events. You can also clear cookies in your browser.
+        </p>
+        <p>
+          Your browser may also store progress on your device so you can return to an
+          assessment you have started.
         </p>
       </LegalSection>
     </LegalPage>

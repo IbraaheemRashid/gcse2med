@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Layout";
 import { footerNav, site } from "@/content/site";
 import { Logo } from "./Logo";
+import { MarketingCookies } from "./MarketingCookies";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -55,6 +56,7 @@ export function Footer() {
           <p>
             &copy; {year} {site.legalName}. All rights reserved.
           </p>
+          <MarketingCookies />
           <p>
             Tuition is delivered online in small groups. Grade guarantee subject to{" "}
             <Link href="/guarantee-terms" className="underline hover:text-brand-700">
