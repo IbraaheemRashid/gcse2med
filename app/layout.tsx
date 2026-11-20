@@ -8,6 +8,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { BookingProvider } from "@/components/site/BookingProvider";
 import { StickyCta } from "@/components/site/StickyCta";
+import { metaPixelBase } from "@/lib/meta-pixel";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -63,7 +64,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${jakarta.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          id="meta-pixel-base"
+          type="text/plain"
+          dangerouslySetInnerHTML={{ __html: metaPixelBase }}
+        />
+      </head>
       <body className="flex min-h-full flex-col font-sans">
+        <noscript>
+          {/* This first-party endpoint checks the saved choice before redirecting to Meta. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/api/meta-pageview" alt="" width="1" height="1" hidden />
+        </noscript>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organisationJsonLd) }}
